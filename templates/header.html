@@ -1,40 +1,4 @@
-<!DOCTYPE html>
-<html lang="zxx">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="keywords"
-    content="Software Development, IT Solutions, Web Development, Mobile App Development, Satvarth Solutions">
-  <meta name="author" content="Satvarth Solutions">
-  <meta name="description" content="Satvarth Solutions - IT Solutions and Services Company ">
-  <meta name="author" content="satvarth.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>{% block title %}Satvarth Solutions - IT Solutions and Services Company{% endblock %}</title>
-
-
-
-
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
-  <!-- Google Font -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome/all.min.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap/bootstrap.min.css') }}">
-
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/owl-carousel/owl.carousel.min.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper/swiper.min.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup/magnific-popup.css') }}">
-
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
-
-</head>
-
-<body>
   <div id="loader">
     <div class="loader-container">
       <div class="loader-circle"></div>
@@ -180,12 +144,6 @@
   </div>
 </div>
 
-    {% block content %}
-
-
-    
-    {% endblock %}
-   
 
     </div> <script>
     window.addEventListener('load', function () {
@@ -199,4 +157,3 @@
 
   <script src="{{ url_for('static', filename='js/loader.js') }}"></script>
 
-</body>
