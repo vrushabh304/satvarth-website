@@ -1,0 +1,63 @@
+{% extends "header.html" %}
+{% block content %}
+
+{% include 'sidepanel.html' %}
+
+<div class="site-content">
+        <!--=================================
+        Page Header -->
+        <div class="inner-header bg-holder" style="background-image: url('{{ url_for('static', filename='images/banner/inner-header/page-header-01.jpg') }}');">
+          <div class="container">
+            <div class="row  justify-content-center">
+              <div class="col-md-12 text-center">
+                <h1 class="title"> 404</h1>
+                <p>Let success motivate you.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-wrapper">
+
+          <!--=================================
+          Error 404 -->
+          <section class="space-ptb error-section ellipse-bottom">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  <div class="error-content text-center">
+                    <div class="error-main-title">
+                      <h1 class="error-title">
+                         <span class="error-text">404</span>
+                         <span class="bg-text-stroke">404</span>
+                      </h1>
+                     
+                    </div>
+                    <h3 class="sub-title">Oops! Page Not Found</h3>
+                    <p class="description mb-5">The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>
+                    <a class="btn btn-effect" href="{{ url_for('index') }}">
+                      <span>Go Back to Home</span>
+                      <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_837_10173)">
+                      <path d="M10.2363 20.1519L9.4446 17.7178C8.16633 13.7879 4.70606 10.9702 0.598775 10.5144C4.6846 10.1602 8.15749 7.3858 9.40522 3.47908L10.2363 0.876818" stroke="white" stroke-width="2"/>
+                      <path d="M0.777127 10.5026L21.666 10.5026" stroke="white" stroke-width="2"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_837_10173">
+                      <rect width="21.3333" height="20" fill="white" transform="translate(21.666 20.6667) rotate(-180)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+
+{% include 'footer.html' %}
+{% endblock %}

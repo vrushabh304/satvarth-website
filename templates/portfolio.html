@@ -1,0 +1,1844 @@
+{% extends "header.html" %}
+{% block content %}
+
+
+{% include 'sidepanel.html' %}
+<!--=================================
+        Portfolio Hero Section -->
+<style>
+  /* Portfolio Hero Section */
+.portfolio-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+  
+  /* --- ADD THIS LINE BELOW --- */
+  padding-top: 120px; /* Adjust this value to match your navbar height */
+  @media (max-width: 768px) {
+  /* ... existing styles ... */
+
+  /* --- ADD THIS BLOCK --- */
+  .portfolio-hero {
+    padding-top: 100px; /* Slightly less padding for mobile */
+    align-items: flex-start; /* Aligns content to top instead of center on mobile if needed */
+  }
+  
+  .hero-content {
+    padding-top: 40px; /* Extra push for the text content on mobile */
+  }
+}
+}
+</style>
+<div class="portfolio-hero">
+  <div class="hero-background">
+    <div class="hero-particles"></div>
+    <div class="hero-gradient"></div>
+  </div>
+  <div class="container">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-6">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <img class="img-fluid logoonly" src="{{ url_for('static',filename='images/logoonly.svg') }}" alt="">
+            <span>Our Portfolio</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="title-line">Creative</span>
+            <span class="title-line highlight">Excellence</span>
+            <span class="title-line">Delivered</span>
+          </h1>
+          <p class="hero-description">
+            Discover our premium collection of innovative digital solutions that have transformed businesses across industries. Each project represents our commitment to excellence and cutting-edge technology.
+          </p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">150+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">98%</div>
+              <div class="stat-label">Client Satisfaction</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">8</div>
+              <div class="stat-label">Industries Served</div>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="{{ url_for('contact_us') }}" class="btn-primary-custom">
+              <span>Start Your Project</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#portfolio-showcase" class="btn-secondary-custom">
+              <span>Explore Work</span>
+              <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-visual">
+          <div class="floating-cards">
+            <div class="floating-card card-1">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="E-commerce Project">
+              <div class="card-overlay">E-commerce</div>
+            </div>      
+      <div class="floating-card card-2">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Healthcare Project">
+              <div class="card-overlay">Healthcare</div>
+            </div>
+            <div class="floating-card card-3">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Education Project">
+              <div class="card-overlay">Education</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper">
+
+  <!--=================================
+          Portfolio Showcase -->
+  <section id="portfolio-showcase" class="portfolio-showcase">
+    <div class="container-fluid">
+      
+      <!-- Portfolio Header -->
+      <div class="portfolio-header">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <div class="section-badge">
+                <img class="img-fluid logoonly" src="{{ url_for('static',filename='images/logoonly.svg') }}" alt="">
+                <span>Our Work</span>
+              </div>
+              <h2 class="section-title-modern">
+                <span class="title-word">Premium</span>
+                <span class="title-word highlight">Digital</span>
+                <span class="title-word">Solutions</span>
+              </h2>
+              <p class="section-description">
+                Explore our curated collection of innovative projects across diverse industries, 
+                each crafted with precision and designed to deliver exceptional results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Industry Filter Tabs -->
+      <div class="industry-filter-tabs">
+        <div class="container">
+          <div class="filter-tabs-wrapper">
+            <div class="filter-tab active" data-filter="all">
+              <div class="tab-icon">
+                <i class="fas fa-th-large"></i>
+              </div>
+              <div class="tab-content">
+                <span class="tab-title">All Projects</span>
+                <span class="tab-count">24</span>
+              </div>
+            </div> 
+           <div class="filter-tab" data-filter="education">
+              <div class="tab-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="tab-content">
+                <span class="tab-title">Education</span>
+                <span class="tab-count">4</span>
+              </div>
+            </div>
+            <div class="filter-tab" data-filter="healthcare">
+              <div class="tab-icon">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <div class="tab-content">
+                <span class="tab-title">Healthcare</span>
+                <span class="tab-count">4</span>
+              </div>
+            </div>
+            <div class="filter-tab" data-filter="ecommerce">
+              <div class="tab-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="tab-content">
+                <span class="tab-title">E-commerce</span>
+                <span class="tab-count">4</span>
+              </div>
+            </div>
+            <div class="filter-tab" data-filter="manufacturing">
+              <div class="tab-icon">
+                <i class="fas fa-industry"></i>
+              </div>
+              <div class="tab-content">
+                <span class="tab-title">Manufacturing</span>
+                <span class="tab-count">3</span>
+              </div>
+            </div>
+            <div class="filter-tab" data-filter="realestate">
+              <div class="tab-icon">
+                <i class="fas fa-building"></i>
+              </div>
+              <div class="tab-content">
+                <span class="tab-title">Real Estate</span>
+                <span class="tab-count">3</span>
+              </div>
+            </div>
+            <div class="filter-tab" data-filter="travel">
+              <div class="tab-icon">
+                <i class="fas fa-plane"></i>
+              </div>
+              <div class="tab-content">
+                <span class="tab-title">Travel</span>
+                <span class="tab-count">3</span>
+              </div>
+            </div>
+            <div class="filter-tab" data-filter="music">
+              <div class="tab-icon">
+                <i class="fas fa-music"></i>
+              </div>
+              <div class="tab-content">
+                <span class="tab-title">Music</span>
+                <span class="tab-count">3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>     
+       <!-- Portfolio Masonry Grid -->
+      <div class="portfolio-masonry">
+        <div class="container-fluid px-4">
+          <div class="masonry-grid">
+            
+            <!-- EDUCATION PROJECTS -->
+            <!-- Education Project 1 - Large Featured -->
+            <div class="masonry-item large education featured">
+              <div class="project-card premium">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="University LMS Platform">
+                  <div class="project-overlay">
+                    <div class="project-category">Education</div>
+                    <div class="project-content">
+                      <h3 class="project-title">University LMS Platform</h3>
+                      <p class="project-description">Comprehensive learning management system serving 15,000+ students with advanced course management, real-time collaboration, and AI-powered analytics.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">AI/ML</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education Project 2 - Medium -->
+            <div class="masonry-item medium education">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="K-12 Student Portal">
+                  <div class="project-overlay">
+                    <div class="project-category">Education</div>
+                    <div class="project-content">
+                      <h3 class="project-title">K-12 Student Portal</h3>
+                      <p class="project-description">Interactive student portal with grade tracking, assignment submission, and parent communication features.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>         
+   <!-- Education Project 3 - Small -->
+            <div class="masonry-item small education">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mobile Learning App">
+                  <div class="project-overlay">
+                    <div class="project-category">Education</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Mobile Learning App</h3>
+                      <p class="project-description">Gamified mobile learning with offline content and adaptive algorithms.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Firebase</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education Project 4 - Medium -->
+            <div class="masonry-item medium education">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Virtual Classroom">
+                  <div class="project-overlay">
+                    <div class="project-category">Education</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Virtual Classroom Platform</h3>
+                      <p class="project-description">Interactive virtual classroom with video conferencing, whiteboard, and real-time collaboration tools.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">WebRTC</span>
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">Express</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>   
+         <!-- HEALTHCARE PROJECTS -->
+            <!-- Healthcare Project 1 - Large -->
+            <div class="masonry-item large healthcare">
+              <div class="project-card premium">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Hospital Management System">
+                  <div class="project-overlay">
+                    <div class="project-category">Healthcare</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Hospital Management System</h3>
+                      <p class="project-description">Comprehensive HIPAA-compliant hospital management system with patient records, scheduling, billing integration, and advanced analytics dashboard.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">.NET Core</span>
+                        <span class="tech-tag">SQL Server</span>
+                        <span class="tech-tag">HIPAA</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Healthcare Project 2 - Small -->
+            <div class="masonry-item small healthcare">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Telemedicine Platform">
+                  <div class="project-overlay">
+                    <div class="project-category">Healthcare</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Telemedicine Platform</h3>
+                      <p class="project-description">Secure video consultation platform with appointment scheduling.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">WebRTC</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>   
+         <!-- Healthcare Project 3 - Medium -->
+            <div class="masonry-item medium healthcare">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Electronic Health Records">
+                  <div class="project-overlay">
+                    <div class="project-category">Healthcare</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Electronic Health Records</h3>
+                      <p class="project-description">Advanced EHR system with clinical decision support and comprehensive patient data management.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Healthcare Project 4 - Small -->
+            <div class="masonry-item small healthcare">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Health Monitoring App">
+                  <div class="project-overlay">
+                    <div class="project-category">Healthcare</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Health Monitoring App</h3>
+                      <p class="project-description">IoT-enabled health monitoring with wearable device integration.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">IoT</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+       <!-- E-COMMERCE PROJECTS -->
+            <!-- E-commerce Project 1 - Large Featured -->
+            <div class="masonry-item large ecommerce featured">
+              <div class="project-card premium">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') }}" alt="Fashion E-commerce Platform">
+                  <div class="project-overlay">
+                    <div class="project-category">E-commerce</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Fashion E-commerce Platform</h3>
+                      <p class="project-description">Multi-vendor fashion marketplace with AR try-on features, personalized AI recommendations, social shopping, and advanced analytics dashboard.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">AR/VR</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- E-commerce Project 2 - Medium -->
+            <div class="masonry-item medium ecommerce">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Electronics Store">
+                  <div class="project-overlay">
+                    <div class="project-category">E-commerce</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Electronics Mega Store</h3>
+                      <p class="project-description">High-performance electronics platform with advanced search and comparison tools.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">Shopify Plus</span>
+                        <span class="tech-tag">GraphQL</span>
+                        <span class="tech-tag">Redis</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>         
+   <!-- E-commerce Project 3 - Small -->
+            <div class="masonry-item small ecommerce">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="B2B Marketplace">
+                  <div class="project-overlay">
+                    <div class="project-category">E-commerce</div>
+                    <div class="project-content">
+                      <h3 class="project-title">B2B Marketplace</h3>
+                      <p class="project-description">Enterprise B2B platform with bulk ordering and custom pricing.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- E-commerce Project 4 - Medium -->
+            <div class="masonry-item medium ecommerce">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Grocery Delivery Platform">
+                  <div class="project-overlay">
+                    <div class="project-category">E-commerce</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Grocery Delivery Platform</h3>
+                      <p class="project-description">On-demand grocery delivery app with real-time tracking and smart shopping lists.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>          
+  <!-- MANUFACTURING PROJECTS -->
+            <!-- Manufacturing Project 1 - Large -->
+            <div class="masonry-item large manufacturing">
+              <div class="project-card premium">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Smart Factory Dashboard">
+                  <div class="project-overlay">
+                    <div class="project-category">Manufacturing</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Smart Factory Dashboard</h3>
+                      <p class="project-description">Industry 4.0 manufacturing dashboard with IoT integration, predictive maintenance, and real-time production monitoring.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">AI/ML</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Manufacturing Project 2 - Medium -->
+            <div class="masonry-item medium manufacturing">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Supply Chain Management">
+                  <div class="project-overlay">
+                    <div class="project-category">Manufacturing</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Supply Chain Management</h3>
+                      <p class="project-description">End-to-end supply chain system with inventory tracking and logistics optimization.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">Oracle</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>    
+        <!-- Manufacturing Project 3 - Small -->
+            <div class="masonry-item small manufacturing">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="AI Quality Control">
+                  <div class="project-overlay">
+                    <div class="project-category">Manufacturing</div>
+                    <div class="project-content">
+                      <h3 class="project-title">AI Quality Control</h3>
+                      <p class="project-description">Computer vision-based quality control with automated defect detection.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- REAL ESTATE PROJECTS -->
+            <!-- Real Estate Project 1 - Medium -->
+            <div class="masonry-item medium realestate">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Property Management Platform">
+                  <div class="project-overlay">
+                    <div class="project-category">Real Estate</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Property Management Platform</h3>
+                      <p class="project-description">Comprehensive property management with tenant portals and financial reporting.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>       
+     <!-- Real Estate Project 2 - Large -->
+            <div class="masonry-item large realestate">
+              <div class="project-card premium">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Real Estate Portal">
+                  <div class="project-overlay">
+                    <div class="project-category">Real Estate</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Real Estate Listing Portal</h3>
+                      <p class="project-description">Advanced property search portal with virtual tours, mortgage calculators, and comprehensive agent management system.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">VR</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Real Estate Project 3 - Small -->
+            <div class="masonry-item small realestate">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Smart Building Management">
+                  <div class="project-overlay">
+                    <div class="project-category">Real Estate</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Smart Building Management</h3>
+                      <p class="project-description">IoT-enabled building management with energy monitoring.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Python</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+           <!-- TRAVEL PROJECTS -->
+            <!-- Travel Project 1 - Medium -->
+            <div class="masonry-item medium travel">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Travel Booking Platform">
+                  <div class="project-overlay">
+                    <div class="project-category">Travel</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Travel Booking Platform</h3>
+                      <p class="project-description">Comprehensive travel booking system integrated with global distribution systems.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">GDS APIs</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Travel Project 2 - Small -->
+            <div class="masonry-item small travel">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Travel Guide App">
+                  <div class="project-overlay">
+                    <div class="project-category">Travel</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Smart Travel Guide</h3>
+                      <p class="project-description">AI-powered travel companion with personalized recommendations.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">AI/ML</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+           <!-- Travel Project 3 - Medium -->
+            <div class="masonry-item medium travel">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hotel Management System">
+                  <div class="project-overlay">
+                    <div class="project-category">Travel</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Hotel Management System</h3>
+                      <p class="project-description">Complete hotel management solution with reservation and revenue management.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MUSIC PROJECTS -->
+            <!-- Music Project 1 - Large -->
+            <div class="masonry-item large music">
+              <div class="project-card premium">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Music Streaming Platform">
+                  <div class="project-overlay">
+                    <div class="project-category">Music</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Music Streaming Platform</h3>
+                      <p class="project-description">High-fidelity music streaming service with personalized playlists, social features, and comprehensive artist analytics dashboard.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">AI/ML</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>      
+      <!-- Music Project 2 - Small -->
+            <div class="masonry-item small music">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cloud DAW">
+                  <div class="project-overlay">
+                    <div class="project-category">Music</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Cloud-Based DAW</h3>
+                      <p class="project-description">Professional digital audio workstation with collaborative features.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">Web Audio</span>
+                        <span class="tech-tag">WebRTC</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Music Project 3 - Medium -->
+            <div class="masonry-item medium music">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Concert Management">
+                  <div class="project-overlay">
+                    <div class="project-category">Music</div>
+                    <div class="project-content">
+                      <h3 class="project-title">Concert Management Platform</h3>
+                      <p class="project-description">Event management system with ticketing, venue booking, and fan engagement tools.</p>
+                      <div class="project-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Stripe</span>
+                      </div>
+                      <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  <!
+--=================================
+          Portfolio Stats -->
+  <section class="space-pt bg-black">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="section-title text-center">
+            <span class="sub-title justify-content-center"><img class="img-fluid logoonly" src="{{ url_for('static',filename='images/logoonly.svg') }}" alt="">Portfolio Stats</span>
+            <h2 class="title">Our Project Success Metrics</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="counter counter-style-1 text-center">
+            <div class="counter-number"><span class="timer mb-0" data-to="150" data-speed="5000">150</span><span class="suffix">+</span></div>
+            <div class="counter-info"><span class="counter-title">Projects Completed</span></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="counter counter-style-1 text-center">
+            <div class="counter-number"><span class="timer mb-0" data-to="98" data-speed="5000">98</span><span class="suffix">%</span></div>
+            <div class="counter-info"><span class="counter-title">Client Satisfaction</span></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="counter counter-style-1 text-center">
+            <div class="counter-number"><span class="timer mb-0" data-to="25" data-speed="5000">25</span><span class="suffix">+</span></div>
+            <div class="counter-info"><span class="counter-title">Industries Served</span></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="counter counter-style-1 text-center">
+            <div class="counter-number"><span class="timer mb-0" data-to="5" data-speed="5000">5</span><span class="suffix">+</span></div>
+            <div class="counter-info"><span class="counter-title">Years Experience</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=================================
+          Call to Action -->
+  <section class="space-ptb">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <span class="sub-title justify-content-center">
+            <img class="img-fluid logoonly" src="{{ url_for('static', filename='images/logoonly.svg') }}" alt=""> 
+            Ready to Start?
+          </span>
+          <h2 class="title">Let's Create Something Amazing Together</h2>
+          <p class="mb-4">Ready to bring your vision to life? Let's discuss your project requirements and create a solution that exceeds your expectations.</p>
+          
+          <a class="btn btn-effect me-3" href="{{ url_for('contact_us') }}">
+            <span>Start Your Project</span>
+            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_59_257)">
+                <path d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293" stroke="white" stroke-width="2" />
+                <path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2" />
+              </g>
+              <defs>
+                <clipPath id="clip0_59_257">
+                  <rect width="21.3333" height="20" fill="white" transform="translate(20) rotate(90)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          
+          <a class="btn btn-outline-light" href="{{ url_for('service') }}">View Our Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div><!-- Po
+rtfolio Modern Styles -->
+<style>
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Portfolio Hero Section */
+.portfolio-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.hero-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(119, 190, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: float 20s infinite linear;
+}
+
+.hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(119, 190, 255, 0.1) 0%, transparent 50%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(119, 190, 255, 0.1);
+  border: 1px solid rgba(119, 190, 255, 0.3);
+  padding: 12px 24px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+}
+
+.hero-badge img {
+  margin-right: 12px;
+}
+
+.hero-badge span {
+  color: #77BEFF;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.title-line {
+  display: block;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideInUp 0.8s ease forwards;
+}
+
+.title-line:nth-child(1) { animation-delay: 0.2s; }
+.title-line:nth-child(2) { animation-delay: 0.4s; }
+.title-line:nth-child(3) { animation-delay: 0.6s; }
+
+.title-line.highlight {
+  background: linear-gradient(135deg, #77BEFF 0%, #00D4FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.stat-item {
+  text-align: left;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #77BEFF;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}.hero-ac
+tions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn-primary-custom {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, #77BEFF 0%, #00D4FF 100%);
+  color: #000;
+  padding: 16px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(119, 190, 255, 0.3);
+}
+
+.btn-primary-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(119, 190, 255, 0.4);
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-primary-custom i {
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover i {
+  transform: translateX(5px);
+}
+
+.btn-secondary-custom {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  color: #fff;
+  padding: 16px 32px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary-custom:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-secondary-custom i {
+  margin-left: 10px;
+  animation: bounce 2s infinite;
+}
+
+/* Hero Visual */
+.hero-visual {
+  position: relative;
+  z-index: 2;
+}
+
+.floating-cards {
+  position: relative;
+  height: 500px;
+}
+
+.floating-card {
+  position: absolute;
+  width: 200px;
+  height: 120px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.floating-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: #fff;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card-1 {
+  top: 50px;
+  left: 50px;
+  animation: float1 6s ease-in-out infinite;
+}
+
+.card-2 {
+  top: 200px;
+  right: 100px;
+  animation: float2 8s ease-in-out infinite;
+}
+
+.card-3 {
+  bottom: 100px;
+  left: 150px;
+  animation: float3 7s ease-in-out infinite;
+}/* Portfolio
+ Showcase */
+.portfolio-showcase {
+  background: #000;
+  padding: 100px 0;
+}
+
+.portfolio-header {
+  margin-bottom: 80px;
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(119, 190, 255, 0.1);
+  border: 1px solid rgba(119, 190, 255, 0.3);
+  padding: 12px 24px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+}
+
+.section-badge img {
+  margin-right: 12px;
+}
+
+.section-badge span {
+  color: #77BEFF;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-title-modern {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.title-word {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.title-word.highlight {
+  background: linear-gradient(135deg, #77BEFF 0%, #00D4FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Industry Filter Tabs */
+.industry-filter-tabs {
+  margin-bottom: 80px;
+}
+
+.filter-tabs-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.filter-tab {
+  display: flex;
+  align-items: center;
+  background: rgba(119, 190, 255, 0.05);
+  border: 2px solid rgba(119, 190, 255, 0.2);
+  padding: 15px 25px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+.filter-tab:hover,
+.filter-tab.active {
+  background: linear-gradient(135deg, #77BEFF 0%, #00D4FF 100%);
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(119, 190, 255, 0.3);
+}
+
+.filter-tab:hover .tab-icon,
+.filter-tab.active .tab-icon {
+  color: #000;
+}
+
+.filter-tab:hover .tab-title,
+.filter-tab.active .tab-title {
+  color: #000;
+}
+
+.filter-tab:hover .tab-count,
+.filter-tab.active .tab-count {
+  background: rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+
+.tab-icon {
+  font-size: 20px;
+  color: #77BEFF;
+  margin-right: 12px;
+  transition: all 0.3s ease;
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tab-title {
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.tab-count {
+  background: rgba(119, 190, 255, 0.2);
+  color: #77BEFF;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 4px;
+  text-align: center;
+  transition: all 0.3s ease;
+}/* Mas
+onry Grid */
+.portfolio-masonry {
+  margin-top: 60px;
+}
+
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.masonry-item.small {
+  grid-row: span 1;
+}
+
+.masonry-item.medium {
+  grid-row: span 2;
+}
+
+.masonry-item.large {
+  grid-row: span 3;
+}
+
+.masonry-item.featured {
+  grid-column: span 2;
+}
+
+/* Project Cards */
+.project-card {
+  position: relative;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(119, 190, 255, 0.05);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.project-card.premium {
+  background: linear-gradient(135deg, rgba(119, 190, 255, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
+  border: 1px solid rgba(119, 190, 255, 0.3);
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(119, 190, 255, 0.2);
+}
+
+.project-image {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(119, 190, 255, 0.8) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-category {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(119, 190, 255, 0.9);
+  color: #000;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.project-content {
+  margin-top: auto;
+  transform: translateY(30px);
+  transition: all 0.4s ease;
+}
+
+.project-card:hover .project-content {
+  transform: translateY(0);
+}
+
+.project-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.project-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.tech-tag {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 11px;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  background: #77BEFF;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background: #fff;
+  color: #000;
+  transform: translateX(5px);
+  text-decoration: none;
+}
+
+.project-link i {
+  margin-left: 8px;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover i {
+  transform: translateX(3px);
+}/* 
+Animations */
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes float1 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(-2deg); }
+}
+
+@keyframes float3 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-5px); }
+  60% { transform: translateY(-3px); }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .masonry-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .masonry-item.featured {
+    grid-column: span 1;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  
+  .section-title-modern {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .filter-tabs-wrapper {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  
+  .filter-tab {
+    flex-shrink: 0;
+    min-width: 120px;
+  }
+  
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .floating-cards {
+    height: 400px;
+  }
+  
+  .floating-card {
+    width: 160px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .section-title-modern {
+    font-size: 2.5rem;
+  }
+  
+  .hero-stats {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .filter-tabs-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter-tab {
+    min-width: 200px;
+    justify-content: center;
+  }
+  
+  .masonry-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 250px;
+  }
+  
+  .floating-cards {
+    height: 300px;
+  }
+  
+  .floating-card {
+    width: 140px;
+    height: 80px;
+  }
+  
+  .card-1 {
+    top: 30px;
+    left: 30px;
+  }
+  
+  .card-2 {
+    top: 150px;
+    right: 50px;
+  }
+  
+  .card-3 {
+    bottom: 50px;
+    left: 80px;
+  }
+  
+  .portfolio-showcase {
+    padding: 60px 0;
+  }
+  
+  .portfolio-header {
+    margin-bottom: 50px;
+  }
+  
+  .industry-filter-tabs {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .section-title-modern {
+    font-size: 2rem;
+  }
+  
+  .btn-primary-custom,
+  .btn-secondary-custom {
+    padding: 14px 28px;
+    font-size: 14px;
+  }
+  
+  .project-overlay {
+    padding: 20px;
+  }
+  
+  .project-title {
+    font-size: 1.2rem;
+  }
+  
+  .project-description {
+    font-size: 13px;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+  }
+  
+  .floating-card {
+    width: 120px;
+    height: 70px;
+  }
+  
+  .card-overlay {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+</style><!--
+ Portfolio Modern JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Filter Tab Functionality
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const portfolioItems = document.querySelectorAll('.masonry-item');
+
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      // Remove active class from all tabs
+      filterTabs.forEach(t => t.classList.remove('active'));
+      // Add active class to clicked tab
+      this.classList.add('active');
+
+      const filter = this.getAttribute('data-filter');
+
+      // Filter portfolio items with staggered animation
+      portfolioItems.forEach((item, index) => {
+        if (filter === 'all' || item.classList.contains(filter)) {
+          item.style.display = 'block';
+          item.style.opacity = '0';
+          item.style.transform = 'translateY(50px) scale(0.9)';
+          
+          setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'translateY(0) scale(1)';
+          }, 100 + (index * 100)); // Staggered animation
+        } else {
+          item.style.opacity = '0';
+          item.style.transform = 'translateY(50px) scale(0.9)';
+          
+          setTimeout(() => {
+            item.style.display = 'none';
+          }, 300);
+        }
+      });
+    });
+  });
+
+  // Smooth scroll for hero buttons
+  const exploreButton = document.querySelector('.btn-secondary-custom');
+  if (exploreButton) {
+    exploreButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector('#portfolio-showcase').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  }
+
+  // Intersection Observer for scroll animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0) scale(1)';
+      }
+    });
+  }, observerOptions);
+
+  // Observe portfolio items for scroll animations
+  portfolioItems.forEach((item, index) => {
+    item.style.opacity = '0';
+    item.style.transform = 'translateY(50px) scale(0.9)';
+    item.style.transition = `all 0.6s ease ${index * 0.1}s`;
+    observer.observe(item);
+  });
+
+  // Enhanced hover effects for project cards
+  const projectCards = document.querySelectorAll('.project-card');
+  
+  projectCards.forEach(card => {
+    card.addEventListener('mouseenter', function() {
+      // Add subtle glow effect
+      this.style.boxShadow = '0 30px 60px rgba(119, 190, 255, 0.3)';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+      this.style.boxShadow = '';
+    });
+  });
+
+  // Parallax effect for hero section
+  window.addEventListener('scroll', function() {
+    const scrolled = window.pageYOffset;
+    const heroParticles = document.querySelector('.hero-particles');
+    const floatingCards = document.querySelectorAll('.floating-card');
+    
+    if (heroParticles) {
+      heroParticles.style.transform = `translateY(${scrolled * 0.5}px)`;
+    }
+    
+    floatingCards.forEach((card, index) => {
+      const speed = 0.2 + (index * 0.1);
+      card.style.transform = `translateY(${scrolled * speed}px)`;
+    });
+  });
+
+  // Project link handlers
+  const projectLinks = document.querySelectorAll('.project-link');
+  projectLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const projectTitle = this.closest('.project-card').querySelector('.project-title').textContent;
+      
+      // Add your project detail modal or navigation logic here
+      console.log('View project clicked for:', projectTitle);
+      
+      // Example: You could open a modal or navigate to a project detail page
+      // window.location.href = `project-detail.php?project=${encodeURIComponent(projectTitle)}`;
+    });
+  });
+
+  // Add loading animation for images
+  const projectImages = document.querySelectorAll('.project-image img');
+  projectImages.forEach(img => {
+    img.addEventListener('load', function() {
+      this.style.opacity = '1';
+    });
+    
+    // Set initial opacity
+    img.style.opacity = '1 ';
+    img.style.transition = 'opacity 0.3s ease';
+  });
+
+  // Smooth reveal animation for filter tabs
+  const filterTabsWrapper = document.querySelector('.filter-tabs-wrapper');
+  if (filterTabsWrapper) {
+    const tabObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const tabs = entry.target.querySelectorAll('.filter-tab');
+          tabs.forEach((tab, index) => {
+            setTimeout(() => {
+              tab.style.opacity = '1';
+              tab.style.transform = 'translateY(0)';
+            }, index * 100);
+          });
+        }
+      });
+    }, { threshold: 0.5 });
+
+    // Set initial state for tabs
+    const tabs = filterTabsWrapper.querySelectorAll('.filter-tab');
+    tabs.forEach(tab => {
+      tab.style.opacity = '0';
+      tab.style.transform = 'translateY(30px)';
+      tab.style.transition = 'all 0.4s ease';
+    });
+
+    tabObserver.observe(filterTabsWrapper);
+  }
+
+  // Add dynamic counter animation for hero stats
+  const statNumbers = document.querySelectorAll('.stat-number');
+  statNumbers.forEach(stat => {
+    const target = parseInt(stat.textContent);
+    const suffix = stat.querySelector('.suffix') ? stat.querySelector('.suffix').textContent : '';
+    let current = 0;
+    const increment = target / 50;
+    
+    const updateCounter = () => {
+      if (current < target) {
+        current += increment;
+        stat.textContent = Math.ceil(current) + suffix;
+        requestAnimationFrame(updateCounter);
+      } else {
+        stat.textContent = target + suffix;
+      }
+    };
+    
+    // Start animation when element is visible
+    const counterObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          updateCounter();
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    });
+    
+    counterObserver.observe(stat);
+  });
+});
+</script>
+{% include 'footer.html' %}
+{% endblock %}

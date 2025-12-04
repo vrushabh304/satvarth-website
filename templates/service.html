@@ -1,0 +1,171 @@
+{% extends "header.html" %}
+{% block content %}
+
+
+{% include 'sidepanel.html' %}
+
+
+      <div class="site-content">
+        <!--=================================
+        Page Header -->
+        <div class="inner-header bg-holder" 
+        style="background-image: url('{{ url_for('static', filename='images/banner/inner-header/page-header-01.jpg') }}');">      <!-- this not error  -->
+        
+          <div class="container">
+            <div class="row  justify-content-center">
+              <div class="col-md-12 text-center">
+                <br><br><br>
+                <h1 class="title">Services We Provided</h1>
+                <p>Award-winning website design & creative digital agency services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-wrapper">
+
+          <!--=================================
+          Services -->
+          <section class="space-ptb ellipse-bottom">
+            <div class="container">
+              <div class="row justify-content-start">
+                <div class="col-lg-12">
+                  <div class="services grid-wrapper grid-xl-4 grid-lg-3 grid-md-2 grid-sm-1">
+
+                    <div class="service-wrapper service-style-1"><div class="service-inner">
+                      <div class="service-icon">
+                       <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/Information-Security.svg') }}" alt="#">
+                      </div>
+                      <div class="bg-icon">
+                        <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/color-icon/Information-Security.svg') }}" alt="#">
+                      </div>
+                      <div class="service-content">
+                        <h5 class="service-title">Custom Web Application Development</h5>
+                        <p>Full-stack web apps using Django, React.js, and Next.js tailored to your business needs.</p>
+                        <div class="service-links">
+                          <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_923_133)"><path d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657" stroke="inherit" stroke-width="2"/><path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"/></g><defs><clipPath id="clip0_923_133"><rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)"/></clipPath></defs></svg></a>
+                        </div>
+                      </div>
+                    </div></div>
+                    <div class="service-wrapper service-style-1"><div class="service-inner">
+                      <div class="service-icon">
+                        <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/Data-Synchronization.svg') }}" alt="#">
+                      </div>
+                      <div class="bg-icon">
+                        <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/color-icon/Data-Synchronization.svg') }}" alt="#">
+                      </div>
+                      <div class="service-content">
+                        <h5 class="service-title">Mobile App Development</h5>
+                        <p>Cross-platform apps using React Native and Flutter for Android & iOS.</p>
+                        <div class="service-links">
+                          <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_923_134)"><path d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657" stroke="inherit" stroke-width="2"/><path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"/></g><defs><clipPath id="clip0_923_134"><rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)"/></clipPath></defs></svg></a>
+                        </div>
+                      </div>
+                    </div></div>
+                    <div class="service-wrapper service-style-1"><div class="service-inner">
+                      <div class="service-icon">
+                         <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/Mobile-Platforms.svg') }}" alt="#">
+                      </div>
+                      <div class="bg-icon">
+                         <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/color-icon/Mobile-Platforms.svg') }}" alt="#">
+                      </div>
+                      <div class="service-content">
+                        <h5 class="service-title">UI/UX Design Services</h5>
+                        <p>Intuitive, modern, and user-centric design for web and mobile platforms.</p>
+                        <div class="service-links">
+                          <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_923_135)"><path d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657" stroke="inherit" stroke-width="2"/><path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"/></g><defs><clipPath id="clip0_923_135"><rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)"/></clipPath></defs></svg></a>
+                        </div>
+                      </div>
+                    </div></div>
+                    <div class="service-wrapper service-style-1"><div class="service-inner">
+                      <div class="service-icon">
+                        <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/Process-Automation.svg') }}" alt="#">
+                      </div>
+                      <div class="bg-icon">
+                        <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/color-icon/Process-Automation.svg') }}" alt="#">
+                      </div>
+                      <div class="service-content">
+                        <h5 class="service-title">3D Web Experiences</h5>
+                        <p>Interactive 3D websites and applications using Three.js (3D wardrobe builders, product configurators).</p>
+                        <div class="service-links">
+                          <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_923_136)"><path d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657" stroke="inherit" stroke-width="2"/><path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"/></g><defs><clipPath id="clip0_923_136"><rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)"/></clipPath></defs></svg></a>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+
+                    <div class="service-wrapper service-style-1"><div class="service-inner">
+                      <div class="service-icon">
+                         <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/Event-Processing.svg') }}" alt="#">
+                      </div>
+                      <div class="bg-icon">
+                         <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/color-icon/Event-Processing.svg') }}" alt="#">
+                      </div>
+                      <div class="service-content">
+                        <h5 class="service-title">E-commerce Solutions</h5>
+                        <p>Scalable, secure e-commerce platforms with full admin control and payment gateway integration.</p>
+                        <div class="service-links">
+                          <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_923_137)"><path d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657" stroke="inherit" stroke-width="2"/><path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"/></g><defs><clipPath id="clip0_923_137"><rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)"/></clipPath></defs></svg></a>
+                        </div>
+                      </div>
+                    </div></div>
+                    <div class="service-wrapper service-style-1"><div class="service-inner">
+                      <div class="service-icon">
+                        <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/Content-Management.svg') }}" alt="#">
+                      </div>
+                      <div class="bg-icon">
+                         <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/color-icon/Content-Management.svg') }}" alt="#">
+                      </div>
+                      <div class="service-content">
+                        <h5 class="service-title">API Development & Integration</h5>
+                        <p>Secure and scalable RESTful APIs using Python Django and integration with third-party services.</p>
+                        <div class="service-links">
+                          <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_923_138)"><path d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657" stroke="inherit" stroke-width="2"/><path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"/></g><defs><clipPath id="clip0_923_138"><rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)"/></clipPath></defs></svg></a>
+                        </div>
+                      </div>
+                    </div></div>
+                    <div class="service-wrapper service-style-1"><div class="service-inner">
+                      <div class="service-icon">
+                         <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/Content-Management.svg') }}" alt="#">
+                      </div>
+                      <div class="bg-icon">
+                         <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/color-icon/Content-Management.svg') }}" alt="#">
+                      </div>
+                      <div class="service-content">
+                        <h5 class="service-title">Custom CMS & ERP Systems</h5>
+                        <p>Tailor-made content management and enterprise resource planning systems for various industries.</p>
+                        <div class="service-links">
+                          <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_923_139)"><path d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657" stroke="inherit" stroke-width="2"/><path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"/></g><defs><clipPath id="clip0_923_139"><rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)"/></clipPath></defs></svg></a>
+                        </div>
+                      </div>
+                    </div></div>
+                    <div class="service-wrapper service-style-1"><div class="service-inner">
+                      <div class="service-icon">
+                         <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/Content-Management.svg') }}" alt="#">
+                      </div>
+                      <div class="bg-icon">
+                        <img class="img-fluid" src=" {{ url_for('static',filename='images/svg/services/color-icon/Content-Management.svg') }}" alt="#">
+                      </div>
+                      <div class="service-content">
+                        <h5 class="service-title">Maintenance & Support</h5>
+                        <p>Ongoing technical support, updates, and optimization for your applications and websites.</p>
+                        <div class="service-links">
+                          <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_923_140)"><path d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657" stroke="inherit" stroke-width="2"/><path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"/></g><defs><clipPath id="clip0_923_140"><rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)"/></clipPath></defs></svg></a>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--=================================
+          Services -->
+
+        </div>
+      </div>
+{% include 'footer.html' %}
+{% endblock %}

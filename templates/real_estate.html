@@ -1,0 +1,369 @@
+{% extends "header.html" %}
+{% block content %}
+
+
+{% include 'sidepanel.html' %}
+
+<!--=================================
+        Real Estate Banner -->
+<div class="main-banner main-banner-2">
+  <div class="banner-inner">
+    <img class="img-fluid banner-bg" src="{{ url_for('static',filename='images/banner/banner-02/bg.jpg') }}" alt="Real Estate Technology Solutions">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="banner-conent">
+            <span class="sub-title"><img class="img-fluid logoonly" src="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Real Estate Technology</span>
+            <h1 class="title mb-2 mb-md-4">Transforming Property</h1>
+            <div class="conent">
+              <p class="small-text">Revolutionizing the real estate industry with cutting-edge technology solutions that streamline property management, enhance customer experiences, and drive business growth.</p>
+              
+            </div>
+            <div class="row justify-content-start align-items-center">
+              <div class="col-lg-3 col-md-4 col-sm-4 order-sm-0 order-2">
+                <a class="btn btn-effect" href="{{ url_for('contact_us') }}">
+                  <span>Explore Solutions</span>
+                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_59_253)">
+                      <path d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293" stroke="white" stroke-width="2" />
+                      <path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2" />
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-5 order-sm-0 order-1">
+                <div class="counter counter-style-1 pt-0">
+                  <div class="counter-number"><span class="timer mb-0" data-to="250" data-speed="2000">250</span><span class="suffix">+</span></div>
+                  <div class="counter-info"><span class="counter-title">Real Estate Businesses Served</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper">
+
+  <!--=================================
+          Real Estate Solutions -->
+  <section class="space-ptb">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-7 col-lg-8">
+          <div class="section-title mb-lg-0">
+            <span class="sub-title"><img class="img-fluid logoonly" src="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> PropTech Solutions</span>
+            <h2 class="title mb-0">Comprehensive Real Estate Technology Services</h2>
+          </div>
+        </div>
+        <div class="col-xxl-5 col-lg-4 align-self-end">
+          <p class="mb-0 ps-xxl-5">From real estate agencies to property developers, we provide innovative technology solutions that modernize operations and enhance customer experiences.</p>
+        </div>
+      </div>
+
+      <div class="row mt-5 pt-2">
+        <div class="col-lg-6 mb-4">
+          <div class="service-wrapper service-style-2">
+            <div class="service-inner">
+              <div class="service-icon">
+                <i class="fas fa-home" style="font-size: 48px; color: #77BEFF;"></i>
+              </div>
+              <div class="service-content">
+                <h5 class="service-title">Property Management Systems</h5>
+                <p>Comprehensive property management platforms for landlords, property managers, and real estate companies with tenant management and maintenance tracking.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="service-wrapper service-style-2">
+            <div class="service-inner">
+              <div class="service-icon">
+                <i class="fas fa-search" style="font-size: 48px; color: #77BEFF;"></i>
+              </div>
+              <div class="service-content">
+                <h5 class="service-title">Property Search Portals</h5>
+                <p>Advanced property listing websites and mobile apps with intelligent search, virtual tours, and integrated CRM for lead management.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="service-wrapper service-style-2">
+            <div class="service-inner">
+              <div class="service-icon">
+                <i class="fas fa-chart-line" style="font-size: 48px; color: #77BEFF;"></i>
+              </div>
+              <div class="service-content">
+                <h5 class="service-title">Real Estate CRM</h5>
+                <p>Customer relationship management systems specifically designed for real estate professionals with lead tracking, automated follow-ups, and deal management.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="service-wrapper service-style-2">
+            <div class="service-inner">
+              <div class="service-icon">
+                <i class="fas fa-vr-cardboard" style="font-size: 48px; color: #77BEFF;"></i>
+              </div>
+              <div class="service-content">
+                <h5 class="service-title">Virtual Reality Tours</h5>
+                <p>Immersive VR and 3D virtual tour solutions that allow potential buyers to explore properties remotely with interactive features and detailed views.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=================================
+          Real Estate Services -->
+  <section class="space-pt bg-black">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="section-title text-center">
+            <span class="sub-title justify-content-center"><img class="img-fluid logoonly" src="{{ url_for('static',filename='images/logoonly.svg') }}" alt="">Property Types</span>
+            <h2 class="title">Real Estate Sectors We Serve</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+            <i class="fas fa-building" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
+            <h5>Residential</h5>
+            <p>Homes, apartments, and residential property management solutions.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+            <i class="fas fa-city" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
+            <h5>Commercial</h5>
+            <p>Office buildings, retail spaces, and commercial property platforms.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+            <i class="fas fa-warehouse" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
+            <h5>Industrial</h5>
+            <p>Warehouses, manufacturing facilities, and industrial property management.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+            <i class="fas fa-seedling" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
+            <h5>Land Development</h5>
+            <p>Raw land, development projects, and investment property solutions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=================================
+          PropTech Features -->
+  <section class="space-ptb">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="section-title text-center">
+            <span class="sub-title justify-content-center"><img class="img-fluid logoonly" src="{{ url_for('static',filename='images/logoonly.svg') }}" alt="">Advanced Features</span>
+            <h2 class="title">Cutting-Edge PropTech Features</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+            <i class="fas fa-brain" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
+            <h5>AI-Powered Valuation</h5>
+            <p>Automated property valuation using machine learning and market data analysis.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+            <i class="fas fa-mobile-alt" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
+            <h5>Mobile-First Design</h5>
+            <p>Responsive platforms optimized for mobile devices and on-the-go property management.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+            <i class="fas fa-file-contract" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
+            <h5>Digital Contracts</h5>
+            <p>Electronic signature integration and digital document management for seamless transactions.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+            <i class="fas fa-map-marked-alt" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
+            <h5>Interactive Maps</h5>
+            <p>Advanced mapping features with neighborhood insights and location-based search.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+            <i class="fas fa-calculator" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
+            <h5>Financial Tools</h5>
+            <p>Mortgage calculators, ROI analysis, and investment property evaluation tools.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+            <i class="fas fa-bell" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
+            <h5>Smart Notifications</h5>
+            <p>Automated alerts for price changes, new listings, and important property updates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=================================
+          Case Studies -->
+  <section class="space-pt bg-black">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="section-title text-center">
+            <span class="sub-title justify-content-center"><img class="img-fluid logoonly" src="{{ url_for('static',filename='images/logoonly.svg') }}" alt="">Success Stories</span>
+            <h2 class="title">Real Estate Success Stories</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-4 mb-4">
+          <div class="case-studies-wrapper case-studies-style-1">
+            <div class="case-studies-img">
+              <img class="img-fluid" src="{{ url_for('static',filename='images/case-studies/09.jpg') }}" alt="Property Portal">
+            </div>
+            <div class="case-studies-info">
+              <div class="case-studies-info-inner">
+                <h3 class="case-studies-title">National Property Portal</h3>
+                <div class="case-studies-content">
+                  <div class="case-studies-description">Comprehensive property listing platform serving 10,000+ properties with advanced search and virtual tour capabilities.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="case-studies-wrapper case-studies-style-1">
+            <div class="case-studies-img">
+              <img class="img-fluid" src="{{ url_for('static',filename='images/case-studies/08.jpg') }}" alt="Property Management">
+            </div>
+            <div class="case-studies-info">
+              <div class="case-studies-info-inner">
+                <h3 class="case-studies-title">Smart Property Management</h3>
+                <div class="case-studies-content">
+                  <div class="case-studies-description">IoT-enabled property management system reducing operational costs by 30% and improving tenant satisfaction.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="case-studies-wrapper case-studies-style-1">
+            <div class="case-studies-img">
+              <img class="img-fluid" src="{{ url_for('static',filename='images/case-studies/07.jpg') }}" alt="Real Estate CRM">
+            </div>
+            <div class="case-studies-info">
+              <div class="case-studies-info-inner">
+                <h3 class="case-studies-title">Real Estate CRM Platform</h3>
+                <div class="case-studies-content">
+                  <div class="case-studies-description">Custom CRM solution increasing agent productivity by 45% and improving lead conversion rates significantly.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=================================
+          Why Choose Us -->
+  <section class="space-ptb">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-title">
+            <span class="sub-title"><img class="img-fluid logoonly" src="images/logoonly.svg" alt=""> Why Choose Us</span>
+            <h2 class="title">Leading PropTech Solutions Provider</h2>
+          </div>
+          <div class="list-wrapper">
+            <ul class="list">
+              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">12+ Years Real Estate Experience</li>
+              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">MLS & IDX Integration Expertise</li>
+              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">Mobile-First Development</li>
+              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">AI & VR Technology Integration</li>
+              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">Scalable Cloud Solutions</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="counter counter-style-1">
+                <div class="counter-number"><span class="timer mb-0" data-to="250" data-speed="5000">250</span><span class="suffix">+</span></div>
+                <div class="counter-info"><span class="counter-title">Real Estate Clients</span></div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="counter counter-style-1">
+                <div class="counter-number"><span class="timer mb-0" data-to="100" data-speed="5000">100</span><span class="suffix">K+</span></div>
+                <div class="counter-info"><span class="counter-title">Properties Listed</span></div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="counter counter-style-1">
+                <div class="counter-number"><span class="timer mb-0" data-to="96" data-speed="5000">96</span><span class="suffix">%</span></div>
+                <div class="counter-info"><span class="counter-title">Client Satisfaction</span></div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="counter counter-style-1">
+                <div class="counter-number"><span class="timer mb-0" data-to="25" data-speed="5000">25</span><span class="suffix">+</span></div>
+                <div class="counter-info"><span class="counter-title">Cities Covered</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=================================
+          Call to Action -->
+  <section class="space-pt bg-black">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <div class="section-title">
+            <span class="sub-title justify-content-center"><img class="img-fluid logoonly" src="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Get Started</span>
+            <h2 class="title">Ready to Revolutionize Your Real Estate Business?</h2>
+            <p class="mb-4">Let's discuss how our PropTech solutions can modernize your operations and accelerate your business growth.</p>
+            <a class="btn btn-effect me-3" href="{{ url_for('contact_us') }}">
+              <span>Schedule Demo</span>
+              <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_59_257)">
+                  <path d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293" stroke="white" stroke-width="2" />
+                  <path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2" />
+                </g>
+              </svg>
+            </a>
+            <a class="btn btn-outline-light" href="{{ url_for('service') }}">View All Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+{% include 'footer.html' %}
+{% endblock %}

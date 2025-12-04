@@ -1,0 +1,273 @@
+{% extends "header.html" %}
+
+{% block content %}
+
+{% include "sidepanel.html" ignore missing %}
+
+<div class="site-content">
+
+  <div class="container-fluid">
+    <div class="item-efftect">
+       <div class="efftect overflow-hidden"></div>
+       <div class="efftect overflow-hidden"></div>
+       <div class="efftect overflow-hidden"></div>
+       <div class="efftect overflow-hidden"></div>
+       <div class="efftect overflow-hidden"></div>
+    </div>
+  </div>
+
+    <div class="inner-header bg-holder" style="background-image: url({{ url_for('static', filename='images/banner/inner-header/page-header-01.jpg') }});">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-center">
+            <h1 class="title">Contact us</h1>
+            <p>Let success motivate you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="content-wrapper">
+
+      <section class="space-ptb z-index-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-5">
+              <div class="section-title is-sticky">
+                <span class="sub-title"><img class="img-fluid logoonly" src="{{ url_for('static', filename='images/logoonly.svg') }}" alt=""> Our Direction</span>
+                <h2 class="title">We’re here to help you shape your digital future. Let’s connect. </h2>
+                <p>A dream becomes a plan when you write it down. A plan becomes real when you act.</p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-7">
+              <div class="location-items grid-wrapper grid-xl-2 grid-lg-2 grid-md-2 grid-sm-2 grid-xs-1">
+                
+                <div class="location-wrapper location-style-1 bg-black">
+                  <div class="location-inner">
+                    <div class="location-info">
+                      <div class="city-image">
+                        <img class="img-fluid" src="{{ url_for('static', filename='images/city-shanghai.png') }}" alt="">
+                      </div>
+                      <div class="city-info">
+                        <h5 class="city-name"><a href="#">Bangaluru</a></h5>
+                        <div class="city-location">
+                          <div class="location-item">
+                            <i class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/icon-location.png') }}" alt=""></i>
+                            <div class="list-label">17504 cherit hills Rd<br>bangaluru, KT, 340006</div>
+                          </div>
+                          <div class="location-item">
+                            <i class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/icon-phone-call.png') }}" alt=""></i>
+                            <div class="list-label">+(987) 654 -3210</div>
+                          </div>
+                          <div class="location-item">
+                            <i class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/icon-email.png') }}" alt=""></i>
+                            <div class="list-label">inquiry@satvarth.com</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location-wrapper location-style-1 bg-black">
+                  <div class="location-inner">
+                    <div class="location-info">
+                      <div class="city-image">
+                        <img class="img-fluid" src="{{ url_for('static', filename='images/city-frankfurt.png') }}" alt="">
+                      </div>
+                      <div class="city-info">
+                        <h5 class="city-name"><a href="#">Ahmedabad</a></h5>
+                        <div class="city-location">
+                          <div class="location-item">
+                            <i class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/icon-location.png') }}" alt=""></i>
+                            <div class="list-label">214 Westget.near YMCA, Ahmedabad 380006</div>
+                          </div>
+                          <div class="location-item">
+                            <i class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/icon-phone-call.png') }}" alt=""></i>
+                            <div class="list-label">+91 9876543210</div>
+                          </div>
+                          <div class="location-item">
+                            <i class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/icon-email.png') }}" alt=""></i>
+                            <div class="list-label">info@satvarth.com</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location-wrapper location-style-1 bg-black">
+                  <div class="location-inner">
+                    <div class="location-info">
+                      <div class="city-image">
+                        <img class="img-fluid" src="{{ url_for('static', filename='images/city-chicago.png') }}" alt="">
+                      </div>
+                      <div class="city-info">
+                        <h5 class="city-name"><a href="#">Chicago</a></h5>
+                        <div class="city-location">
+                          <div class="location-item">
+                            <i class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/icon-location.png') }}" alt=""></i>
+                            <div class="list-label">214 West Arnold St. New York, NY 10002</div>
+                          </div>
+                          <div class="location-item">
+                            <i class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/icon-phone-call.png') }}" alt=""></i>
+                            <div class="list-label">+(123) 456-7890</div>
+                          </div>
+                          <div class="location-item">
+                            <i class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/icon-email.png') }}" alt=""></i>
+                            <div class="list-label">sales@satvarth.com</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location-wrapper location-style-1 bg-black">
+                  <div class="location-inner">
+                    <div class="location-info">
+                      <div class="city-image">
+                        <img class="img-fluid" src="{{ url_for('static', filename='images/city-new-york.png') }}" alt="">
+                      </div>
+                      <div class="city-info">
+                        <h5 class="city-name"><a href="#">New York</a></h5>
+                        <div class="city-location">
+                          <div class="location-item">
+                            <i class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/icon-location.png') }}" alt=""></i>
+                            <div class="list-label">214 West Arnold St. New York, NY 10002</div>
+                          </div>
+                          <div class="location-item">
+                            <i class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/icon-phone-call.png') }}" alt=""></i>
+                            <div class="list-label">+(123) 456-7890</div>
+                          </div>
+                          <div class="location-item">
+                            <i class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/icon-email.png') }}" alt=""></i>
+                            <div class="list-label">sales@satvarth.com</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="space-pt ellipse-top bg-black">
+        <div class="space-pb ellipse-bottom">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-10">
+                <div class="section-title text-center">
+                  <span class="sub-title d-flex justify-content-center"><img class="img-fluid logoonly" src="{{ url_for('static', filename='images/logoonly.svg') }}" alt=""> contact us</span>
+                  <h2 class="title"> Need assistance? please fill the form </h2>
+                </div>
+                
+                <div class="form-wrapper">
+                  <div id="form-messages" style="display: none; margin-bottom: 20px;">
+                    <div id="success-message" class="alert alert-success" style="display: none; padding: 15px; background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; border-radius: 5px;"></div>
+                    <div id="error-message" class="alert alert-danger" style="display: none; padding: 15px; background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; border-radius: 5px;"></div>
+                  </div>
+                  
+                  <form id="contact-form" class="contact-form form-style-border" method="POST" action="{{ url_for('contact') }}">
+                    
+                    <div class="row">
+                      <div class="col-md-4">
+                        <input type="text" name="name" class="form-control" placeholder="Name *" aria-label="Name" required>
+                      </div>
+                      <div class="col-md-4">
+                        <input type="email" name="email" class="form-control" placeholder="Email *" aria-label="Email" required>
+                      </div>
+                      <div class="col-md-4">
+                         <input type="text" name="phone" class="form-control" placeholder="Phone" aria-label="Phone">
+                      </div>
+                      <div class="col-lg-12">
+                         <input type="text" name="subject" class="form-control" placeholder="Subject" aria-label="Subject" style="margin-bottom: 15px;">
+                      </div>
+                      <div class="col-lg-12">
+                         <textarea name="message" class="form-control" rows="6" placeholder="Message *" aria-label="Message" required></textarea>
+                      </div>
+                      <div class="col-lg-12">
+                        <button type="submit" class="btn btn-effect" id="submit-btn">
+                          <span id="btn-text">Send Message</span>
+                          <span id="btn-loading" style="display: none;">Sending...</span>
+                          <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_59_253)"><path d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293" stroke="white" stroke-width="2"/><path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2"/></g><defs><clipPath id="clip0_59_253"><rect width="21.3333" height="20" fill="white" transform="translate(20) rotate(90)"/></clipPath></defs></svg>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+</div>
+
+{% include "footer.html" ignore missing %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Stop page reload
+            
+            const form = this;
+            const formData = new FormData(form);
+            const submitBtn = document.getElementById('submit-btn');
+            const btnText = document.getElementById('btn-text');
+            const btnLoading = document.getElementById('btn-loading');
+            const messagesDiv = document.getElementById('form-messages');
+            const successDiv = document.getElementById('success-message');
+            const errorDiv = document.getElementById('error-message');
+            
+            // UI Loading State
+            submitBtn.disabled = true;
+            btnText.style.display = 'none';
+            btnLoading.style.display = 'inline';
+            messagesDiv.style.display = 'none';
+            successDiv.style.display = 'none';
+            errorDiv.style.display = 'none';
+            
+            // Send Data to Python/Flask
+            fetch("{{ url_for('contact') }}", {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                messagesDiv.style.display = 'block';
+                if (data.success) {
+                    successDiv.innerHTML = data.message;
+                    successDiv.style.display = 'block';
+                    form.reset(); 
+                } else {
+                    errorDiv.innerHTML = data.message;
+                    errorDiv.style.display = 'block';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                messagesDiv.style.display = 'block';
+                errorDiv.innerHTML = 'Network error. Please try again.';
+                errorDiv.style.display = 'block';
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                btnText.style.display = 'inline';
+                btnLoading.style.display = 'none';
+            });
+        });
+    }
+});
+</script>
+
+{% endblock %}

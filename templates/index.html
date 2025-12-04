@@ -1,0 +1,1013 @@
+{% extends "header.html" %}
+{% block content %}
+
+
+{% include 'sidepanel.html' %}
+<!--=================================
+        Main Banner -->
+<div class="main-banner main-banner-2" >
+  <div class="banner-inner">
+    <img class="img-fluid banner-bg" 
+     src="{{ url_for('static', filename='images/banner/banner-02/bg.jpg') }}" alt="#">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="banner-conent">
+            <span class="sub-title"><img class="img-fluid logoonly" src="{{ url_for('static', filename='images/logoonly.svg') }}" alt=""> Satvarth</span>
+            <h1 class="title mb-2 mb-md-4">Creativity is</h1>
+            <div class="conent">
+              <p class="small-text">We are committed to delivering seamless support and ensuring your journey with us is
+                smooth and valuable. Every suggestion, concern, or feedback you share helps us serve you better every
+                day.
+
+              </p>
+              <h1 class="title"> <img class="img-fluid banner-icon" src="{{ url_for('static', filename='images/banner/banner-02/01.png') }}" alt="#">
+                Collective.</h1>
+            </div>
+
+            <div class="row justify-content-start align-items-center">
+              <div class="col-lg-3 col-md-4 col-sm-4 order-sm-0 order-2">
+                <a class="btn btn-effect" href="{{ url_for('contact_us')}}">
+                  <span>Get A Quote</span>
+                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_59_253)">
+                      <path
+                        d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293"
+                        stroke="white" stroke-width="2" />
+                      <path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_59_253">
+                        <rect width="21.3333" height="20" fill="white" transform="translate(20) rotate(90)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-5 order-sm-0 order-1">
+                <div class="counter counter-style-1 pt-0">
+                  <div class="counter-number"><span class="timer mb-0" data-to="100" data-speed="2000">100</span><span
+                      class="suffix">%</span></div>
+                  <div class="counter-info"><span class="counter-title">Customer Satisfaction</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrapper">
+
+  <!--=================================
+          WHAT WE DO -->
+  <section class="space-ptb">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-7 col-lg-8">
+          <div class="section-title mb-lg-0">
+            <span class="sub-title"><img class="img-fluid logoonly" src="{{ url_for('static', filename='images/logoonly.svg') }}" alt=""> WHAT WE DO</span>
+            <h2 class="title mb-0">Built with passion. Delivered with precision.</h2>
+          </div>
+        </div>
+        <div class="col-xxl-5 col-lg-4 align-self-end">
+          <p class="mb-0 ps-xxl-5">This is where mastery meets dedication. From concept to completion, perfection guides
+            every step of our process.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="services grid-wrapper grid-xl-4 grid-md-2 grid-sm-1 grid-gap-0  mt-5 pt-lg-4">
+            <div class="service-bottom-space service-wrapper service-style-2 ">
+              <div class="service-inner">
+                <div class="service-icon">
+                  <img class="img-fluid" src="{{ url_for('static', filename='images/svg/services/Information-Security.svg') }}" alt="#">
+                </div>
+                <div class="service-content">
+                  <h5 class="service-title">Web Design</h5>
+                  <div class="list-wrapper">
+                    <ul class="step-list list">
+                      <li><img class="img-fluid" src="images/arrow-right.png" alt="">Custom design</li>
+                      <li><img class="img-fluid" src="images/arrow-right.png" alt="">Front-End Design</li>
+                      <li><img class="img-fluid" src="images/arrow-right.png" alt="">Product Design</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-wrapper service-style-2 service-top-space">
+              <div class="service-inner">
+                <div class="service-icon">
+                  <img class="img-fluid" src="{{ url_for('static', filename='images/svg/services/Data-Synchronization.svg') }}" alt="#">
+                </div>
+                <div class="service-content">
+                  <h5 class="service-title">Mobile Development</h5>
+                  <div class="list-wrapper">
+                    <ul class="step-list list">
+                      <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="">React-Native</li>
+                      <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="">Flutter</li>
+                      <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="">Hybrid platform</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-wrapper service-style-2 service-bottom-space">
+              <div class="service-inner">
+                <div class="service-icon">
+                  <img class="img-fluid" src="{{ url_for('static', filename='images/svg/services/Mobile-Platforms.svg') }}" alt="#">
+                </div>
+                <div class="service-content">
+                  <h5 class="service-title">Branding Services</h5>
+                  <div class="list-wrapper">
+                    <ul class="step-list list">
+                      <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="">Logo design</li>
+                      <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="">UI/UX design</li>
+                      <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="">Visual design</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-wrapper service-style-2 service-top-space">
+              <div class="service-inner">
+                <div class="service-icon">
+                  <img class="img-fluid" src="{{ url_for('static', filename='images/svg/services/Process-Automation.svg') }}" alt="#">
+                </div>
+                <div class="service-content">
+                  <h5 class="service-title">Web Development</h5>
+                  <div class="list-wrapper">
+                    <ul class="step-list list">
+                      <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="">backend Development</li>
+                      <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="">Admin Panel Development</li>
+                      <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="">Product Development</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--=================================
+          WHAT WE DO -->
+
+  <!--=================================
+          About Info -->
+  <section class="space-pt">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xxl-7 col-lg-8">
+          <div class="section-title mb-lg-0">
+            <span class="sub-title"><img class="img-fluid logoonly" src="{{ url_for('static', filename='images/logoonly.svg') }}" alt="">About Satvarth</span>
+            <h2 class="title mb-0">Your experience is everything to us</h2>
+          </div>
+        </div>
+        <div class="col-xxl-5 col-lg-4 align-self-end">
+          <p class="mb-0 ps-xxl-5">You’re not just a user you’re at the heart of everything we do. Our team works
+            tirelessly to deliver service you can trust and enjoy. If something’s off, we’ll make it right — because
+            your experience matters most.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-between mt-5 pt-2">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <img class="img-fluid pe-5" src="{{ url_for('static', filename='images/about/about-07.jpg') }}" alt="">
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="about-details">
+            <div class="rated-reviews-2">
+              <h6>
+                <span>5<i class="fa-solid fa-star"></i></span>
+                <span class="review-detail">Rated 4.90 out of 5 based on over <a href="#"> 1000+ reviews</a></span>
+              </h6>
+            </div>
+            <div class="list-wrapper">
+              <ul class="list">
+                <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="">Web Design</li>
+                <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="">Web Development</li>
+                <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="">Mobile App developement</li>
+                <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="">UI/UX Design</li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-xxl-9">
+                <div class="counter counter-style-1">
+                  <div class="counter-number"><span class="timer mb-0" data-to="160" data-speed="5000">160</span><span
+                      class="suffix">+</span></div>
+                  <div class="counter-info"><span class="counter-title">Business Peoples</span></div>
+                </div>
+              </div>
+              <div class="col-xxl-9">
+                <div class="counter counter-style-1">
+                  <div class="counter-number"><span class="timer mb-0" data-to="100" data-speed="5000">100</span><span
+                      class="suffix">%</span></div>
+                  <div class="counter-info"><span class="counter-title">Customer Satisfaction</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5">
+          <div class="about-right">
+            <div class="about-img">
+              <img class="img-fluid" src="{{ url_for('static', filename='images/about/about-08.png') }}" alt="">
+            </div>
+            <div class="d-flex justify-content-end">
+              <a class="btn btn-effect" href="#">
+                <span>About Us</span>
+                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_59_256)">
+                    <path
+                      d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293"
+                      stroke="white" stroke-width="2" />
+                    <path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_59_256">
+                      <rect width="21.3333" height="20" fill="white" transform="translate(20) rotate(90)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=================================
+          About Info -->
+  <!--=================================
+          Client Logo -->
+  <div class="space-ptb">
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <div class="col-md-12">
+          <div class="marquee-bg">
+            <div class="marquee-wrapper">
+              <div class="marquee-inner">
+                <div class="marquee-item">
+                  <span class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/client-logo/brand-icon77.png') }}" alt="" /></span>
+                  <span class="title">UI/UX Design</span>
+                </div>
+                <div class="marquee-item">
+                  <span class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/client-logo/brand-icon33.png') }}" alt="" /></span>
+                  <span class="title">Python</span>
+                </div>
+                <div class="marquee-item">
+                  <span class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/client-logo/brand-icon66.png') }}" alt="" /></span>
+                  <span class="title">NextJS </span>
+                </div>
+                <div class="marquee-item">
+                  <span class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/client-logo/brand-icon22.png') }}" alt="" /></span>
+                  <span class="title">ReactJS</span>
+                </div>
+                <div class="marquee-item">
+                  <span class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/client-logo/brand-icon88.png') }}" alt="" /></span>
+                  <span class="title">ThreeJS </span>
+                </div>
+                <div class="marquee-item">
+                  <span class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/client-logo/brand-icon44.png') }}" alt="" /></span>
+                  <span class="title">Django</span>
+                </div>
+                <div class="marquee-item">
+                  <span class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/client-logo/brand-icon55.png') }}" alt="" /></span>
+                  <span class="title">Graphic Design</span>
+                </div>
+                <div class="marquee-item">
+                  <span class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/client-logo/brand-icon22.png') }}" alt="" /></span>
+                  <span class="title">React-Native</span>
+                </div>
+                <div class="marquee-item">
+                  <span class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/client-logo/brand-icon11.png') }}" alt="" /></span>
+                  <span class="title">Flutter </span>
+                </div>
+                <div class="marquee-item">
+                  <span class="icon"><img class="img-fluid" src="{{ url_for('static', filename='images/client-logo/brand-icon99.png') }}" alt="" /></span>
+                  <span class="title">Shopify </span>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--=================================
+          Client Logo -->
+
+  <!--=================================
+          Case Studies -->
+  <section class="space-pt ellipse-top bg-black z-index-2">
+    <div class="space-pb ellipse-bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="section-title text-center">
+              <span class="sub-title justify-content-center"><img class="img-fluid logoonly" src="{{ url_for('static', filename='images/logoonly.svg') }}" alt="">Target Industries</span>
+              <h2 class="title">Technologies & Industries<br> We Specialize In</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid g-md-0">
+        <div class="row g-0">
+          <div class="col-lg-12">
+            <div class="case-study-fancy-wrapper">
+              <div class="case-studies-wrapper case-studies-style-1">
+                <div class="case-studies-img">
+                  <img class="img-fluid" src="{{ url_for('static', filename='images/case-studies/07.jpg') }}" alt="">
+                  <a href="#" class="category">Logistics</a>
+                </div>
+                <div class="case-studies-info">
+                  <div class="case-studies-info-inner">
+                    <h3 class="case-studies-title"><a href="#">Financeoont</a></h3>
+                    <div class="case-studies-content">
+                      <div class="case-studies-description">It must come from within as the natural product of your
+                        desire to achieve something and your belief that you are capable.</div>
+                    </div>
+                    <div class="case-study-link">
+                      <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_923_136)">
+                            <path
+                              d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657"
+                              stroke="inherit" stroke-width="2"></path>
+                            <path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"></path>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_923_136">
+                              <rect width="15.904" height="14.8437" fill="inherit"
+                                transform="translate(0.1875 0.578125)"></rect>
+                            </clipPath>
+                          </defs>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-studies-wrapper case-studies-style-1">
+                <div class="case-studies-img">
+                  <img class="img-fluid" src="{{ url_for('static', filename='images/case-studies/01.png') }}" alt="">
+                  <a href="#" class="category">Music</a>
+                </div>
+                <div class="case-studies-info">
+                  <div class="case-studies-info-inner">
+                    <h3 class="case-studies-title"><a href="#">Gozzby</a></h3>
+                    <div class="case-studies-content">
+                      <div class="case-studies-description">It must come from within as the natural product of your
+                        desire to achieve something and your belief that you are capable.</div>
+                    </div>
+                    <div class="case-study-link">
+                      <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_923_137)">
+                            <path
+                              d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657"
+                              stroke="inherit" stroke-width="2"></path>
+                            <path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"></path>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_923_137">
+                              <rect width="15.904" height="14.8437" fill="inherit"
+                                transform="translate(0.1875 0.578125)"></rect>
+                            </clipPath>
+                          </defs>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-studies-wrapper case-studies-style-1 active">
+                <div class="case-studies-img">
+                  <img class="img-fluid" src="{{ url_for('static', filename='images/case-studies/02.png') }}" alt="">
+                  <a href="#" class="category">Education</a>
+                </div>
+                <div class="case-studies-info">
+                  <div class="case-studies-info-inner">
+                    <h3 class="case-studies-title"><a href="#">Petfluent</a></h3>
+                    <div class="case-studies-content">
+                      <div class="case-studies-description">It must come from within as the natural product of your
+                        desire to achieve something and your belief that you are capable.</div>
+                    </div>
+                    <div class="case-study-link">
+                      <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_923_138)">
+                            <path
+                              d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657"
+                              stroke="inherit" stroke-width="2"></path>
+                            <path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"></path>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_923_138">
+                              <rect width="15.904" height="14.8437" fill="inherit"
+                                transform="translate(0.1875 0.578125)"></rect>
+                            </clipPath>
+                          </defs>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-studies-wrapper case-studies-style-1">
+                <div class="case-studies-img">
+                  <img class="img-fluid" src="{{ url_for('static', filename='images/case-studies/09.jpg') }}" alt="">
+                  <a href="#" class="category">Real Estate</a>
+                </div>
+                <div class="case-studies-info">
+                  <div class="case-studies-info-inner">
+                    <h3 class="case-studies-title"><a href="#">Mobifluent</a></h3>
+                    <div class="case-studies-content">
+                      <div class="case-studies-description">It must come from within as the natural product of your
+                        desire to achieve something and your belief that you are capable.</div>
+                    </div>
+                    <div class="case-study-link">
+                      <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_923_139)">
+                            <path
+                              d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657"
+                              stroke="inherit" stroke-width="2"></path>
+                            <path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"></path>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_923_139">
+                              <rect width="15.904" height="14.8437" fill="inherit"
+                                transform="translate(0.1875 0.578125)"></rect>
+                            </clipPath>
+                          </defs>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-studies-wrapper case-studies-style-1">
+                <div class="case-studies-img">
+                  <img class="img-fluid" src="{{ url_for('static', filename='images/case-studies/08.jpg') }}" alt="">
+                  <a href="#" class="category">Health Care</a>
+                </div>
+                <div class="case-studies-info">
+                  <div class="case-studies-info-inner">
+                    <h3 class="case-studies-title"><a href="#">Mobifluent</a></h3>
+                    <div class="case-studies-content">
+                      <div class="case-studies-description">It must come from within as the natural product of your
+                        desire to achieve something and your belief that you are capable.</div>
+                    </div>
+                    <div class="case-study-link">
+                      <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_923_139)">
+                            <path
+                              d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657"
+                              stroke="inherit" stroke-width="2"></path>
+                            <path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"></path>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_923_139">
+                              <rect width="15.904" height="14.8437" fill="inherit"
+                                transform="translate(0.1875 0.578125)"></rect>
+                            </clipPath>
+                          </defs>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-studies-wrapper case-studies-style-1">
+                <div class="case-studies-img">
+                  <img class="img-fluid" src="{{ url_for('static', filename='images/case-studies/05.png') }}" alt="">
+                  <a href="#" class="category">Traveling</a>
+                </div>
+                <div class="case-studies-info">
+                  <div class="case-studies-info-inner">
+                    <h3 class="case-studies-title"><a href="#">Educatgenix</a></h3>
+                    <div class="case-studies-content">
+                      <div class="case-studies-description">It must come from within as the natural product of your
+                        desire to achieve something and your belief that you are capable.</div>
+                    </div>
+                    <div class="case-study-link">
+                      <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_923_140)">
+                            <path
+                              d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657"
+                              stroke="inherit" stroke-width="2"></path>
+                            <path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"></path>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_923_140">
+                              <rect width="15.904" height="14.8437" fill="inherit"
+                                transform="translate(0.1875 0.578125)"></rect>
+                            </clipPath>
+                          </defs>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5 pt-4">
+          <a class="btn btn-effect" href="{{ url_for('case_studies')}}">
+            <span>All Case Study</span>
+            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_59_257)">
+                <path
+                  d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293"
+                  stroke="white" stroke-width="2" />
+                <path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2" />
+              </g>
+              <defs>
+                <clipPath id="clip0_59_257">
+                  <rect width="21.3333" height="20" fill="white" transform="translate(20) rotate(90)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=================================
+          Case Studies -->
+
+
+  <!--=================================
+          Steps -->
+  <section class="space-ptb  z-index-2 bg-black ellipse-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="sticky-top" style="top: 80px;">
+            <div class="section-title mb-0">
+              <span class="sub-title"><img class="img-fluid logoonly" src="{{ url_for('static', filename='images/logoonly.svg') }}" alt=""> How It
+                Works</span>
+              <h2 class="title">Focused strategy, high impact performance</h2>
+            </div>
+            <div class="ps-xxl-5 ms-0 ms-md-5 pb-5 pb-lg-0">
+              <p class="mb-5">Our environment taught us more than just values it taught us limits.Most people never
+                question the rules written by others.</p>
+              <a class="btn btn-effect" href="#">
+                <span>Get Started</span>
+                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_59_255)">
+                    <path
+                      d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293"
+                      stroke="white" stroke-width="2" />
+                    <path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_59_255">
+                      <rect width="21.3333" height="20" fill="white" transform="translate(20) rotate(90)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="steps-wrapper">
+            <div class="steps-item">
+              <div class="step-arrow">
+                <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_923_136)">
+                      <path
+                        d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657"
+                        stroke="inherit" stroke-width="2" />
+                      <path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_923_136">
+                        <rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)" />
+                      </clipPath>
+                    </defs>
+                  </svg></a>
+              </div>
+              <div class="step-info">
+                <span class="step-number">Step 01</span>
+                <h3 class="step-title">Let us know your need</h3>
+                <p>The bottom line is that we must shed the bad and replace with good beliefs.</p>
+                <div class="list-wrapper">
+                  <ul class="step-list list col-2">
+                    <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="" />E-commerce strategy</li>
+                    <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="" />Business intelligence</li>
+                    <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="" />Custom design</li>
+                    <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="" />App Development</li>
+                    <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="" />Brand collateral</li>
+                    <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="" />Front-End development</li>
+                  </ul>
+                </div>
+                <div class="step-image"><img class="img-fluid" src="{{ url_for('static', filename='images/steps/01.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="steps-item">
+              <div class="step-arrow">
+                <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_923_137)">
+                      <path
+                        d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657"
+                        stroke="inherit" stroke-width="2" />
+                      <path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_923_137">
+                        <rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)" />
+                      </clipPath>
+                    </defs>
+                  </svg></a>
+              </div>
+              <div class="step-info">
+                <span class="step-number">Step 02</span>
+                <h3 class="step-title">Meet the team</h3>
+                <p>Progress begins the moment you take the first step.
+                  Without movement, dreams remain just ideas.</p>
+                <div class="list-wrapper">
+                  <ul class="step-list list col-2">
+                    <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="" />Work strategy</li>
+                    <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="" />Implementation</li>
+                  </ul>
+                </div>
+                <div class="step-image"><img class="img-fluid" src="{{ url_for('static', filename='images/steps/02.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="steps-item">
+              <div class="step-arrow">
+                <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_923_138)">
+                      <path
+                        d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657"
+                        stroke="inherit" stroke-width="2" />
+                      <path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_923_138">
+                        <rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)" />
+                      </clipPath>
+                    </defs>
+                  </svg></a>
+              </div>
+              <div class="step-info">
+                <span class="step-number">Step 03</span>
+                <h3 class="step-title">Personalize Your Potential with Satvarth</h3>
+                <p> Dreams don’t work unless you do.
+                  Execution separates thinkers from achievers.</p>
+                <div class="list-wrapper">
+                  <ul class="step-list list col-2">
+                    <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="" />Digital PR</li>
+                    <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="" />Technical Operations</li>
+                    <li><img class="img-fluid" src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="" />Accounting Outsourcing</li>
+                  </ul>
+                </div>
+                <div class="step-image"><img class="img-fluid" src="{{ url_for('static', filename='images/steps/03.png') }}" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 pt-lg-5 justify-content-center">
+        <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
+          <div class="counter counter-style-2 h-100">
+            <div class="counter-number"><span class="timer mb-0" data-to="16" data-speed="2000">16</span><span
+                class="suffix">+</span></div>
+            <div class="counter-info"><span class="counter-title text-white">Expert Developers</span></div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6  mb-4 mb-md-0">
+          <div class="counter counter-style-2 h-100">
+            <div class="counter-number"><span class="timer mb-0" data-to="300" data-speed="2000">300</span><span
+                class="suffix">+</span></div>
+            <div class="counter-info"><span class="counter-title text-white">Project completed</span></div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="counter counter-style-2 h-100">
+            <div class="counter-number"><span class="timer mb-0" data-to="100" data-speed="2000">100</span><span
+                class="suffix">+</span></div>
+            <div class="counter-info"><span class="counter-title text-white">Happy Customers</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=================================
+          Steps -->
+
+  <!--=================================
+          FAQ -->
+  <section class="space-pt ellipse-top">
+    <div class="space-pb ellipse-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="section-title">
+              <span class="sub-title justify-content-center"><img class="img-fluid logoonly" src="{{ url_for('static', filename='images/logoonly.svg') }}" alt=""> FAQ</span>
+              <h2 class="title mb-0">Frequently Asked Questions</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="accordion" id="pgsaccordion">
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">01. Do you work with startups, agencies, and enterprises?</button>
+                </h5>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#pgsaccordion">
+                  <div class="accordion-body">Yes, we partner with businesses of all sizes from startups needing MVPs to enterprises looking for scalable digital products.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    02. What industries do you serve?
+                  </button>
+                </h5>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#pgsaccordion">
+                  <div class="accordion-body">We serve a wide range of industries including eCommerce, healthcare, education, fintech, logistics, Travel, Micanical, CMS, ERP and more</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">03.How will I communicate with your team during the project?</button>
+                </h5>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#pgsaccordion">
+                  <div class="accordion-body">We offer transparent communication via Slack, Zoom, Trello, or email, with weekly progress updates and milestone check-ins. </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">04. How can Satvarth help scale my business digitally?</button>
+                </h5>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#pgsaccordion">
+                  <div class="accordion-body">We build scalable web and mobile solutions tailored to your goals, enabling automation, better user engagement, and increased ROI.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="accordion" id="pgsaccordion1">
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">05. Can you help us with digital transformation across departments?</button>
+                </h5>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#pgsaccordion1">
+                  <div class="accordion-body">Definitely. We develop solutions that streamline workflows, automate tasks, and integrate systems across departments for complete digital transformation.
+
+</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    06. How do you handle tight deadlines or urgent projects?
+                  </button>
+                </h5>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#pgsaccordion1">
+                  <div class="accordion-body">We’re equipped to handle fast-paced development with dedicated teams, ensuring quality output even under tight timelines.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">07. What makes Satvarth different from other tech partners?</button>
+                </h5>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                  data-bs-parent="#pgsaccordion1">
+                  <div class="accordion-body"> We combine deep technical expertise with a business-first mindset, ensuring every solution we build delivers real-world value and growth potential.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h5 class="accordion-header" id="headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">08. Do you work with international clients or only within India?</button>
+                </h5>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                  data-bs-parent="#pgsaccordion1">
+                  <div class="accordion-body">We work globally with startups, agencies, and enterprises, offering seamless remote collaboration and timezone-aligned support.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=================================
+          FAQ -->
+
+ <!--=================================
+          Our Services -->
+          <section class="space-pb">
+            <div class="container">
+              <div class="row gy-4">
+                <div class="col-xxl-6 col-lg-8 ">
+                  <div class="section-title">
+                    <span class="sub-title"><img class="img-fluid logoonly" src="{{ url_for('static', filename='images/logoonly.svg') }}" alt=""> Our Goals</span>
+                    <h2 class="title"> Our Commitment to the Future</h2>
+                  </div>
+                  <div class="ps-xxl-5 ms-0 ms-md-5">
+                    <p>We all know that nothing moves until someone makes a decision. The first action is always in making the decision to proceed. which most people overlook, we don’t do it intentionally or with malice.</p>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-sm-6">
+                  <div class="service-wrapper service-style-1">
+                    <div class="service-inner">
+                      <div class="service-icon">
+                        <img class="img-fluid" src="{{ url_for('static', filename='images/svg/services/Process-Automation.svg') }}" alt="">
+                      </div>
+                      <div class="bg-icon">
+                        <img class="img-fluid" src="{{ url_for('static', filename='images/svg/services/color-icon/Process-Automation.svg') }}" alt="">
+                      </div>
+                      <div class="service-content">
+                        <h5 class="service-title">Our Vision</h5>
+                        <p>We strive to innovate, evolve, and deliver solutions that shape a better tomorrow.
+Our mission is to empower progress through technology, integrity, and lasting impact.
+
+</p>
+                        <div class="service-links">
+                          <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_923_130)"><path d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657" stroke="inherit" stroke-width="2"/><path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"/></g><defs><clipPath id="clip0_923_130"><rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)"/></clipPath></defs></svg></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-sm-6">
+                  <div class="service-wrapper service-style-1">
+                    <div class="service-inner">
+                      <div class="service-icon">
+                        <img class="img-fluid" src="{{ url_for('static', filename='images/svg/services/Mobile-Platforms.svg') }}" alt="">
+                      </div>
+                      <div class="bg-icon">
+                        <img class="img-fluid" src="{{ url_for('static', filename='images/svg/services/color-icon/Mobile-Platforms.svg') }}" alt="">
+                      </div>
+                      <div class="service-content">
+                        <h5 class="service-title">Our Mission</h5>
+                        <p>At Satvarth, our mission is to empower startups, enterprises, and agencies with world-class web, mobile, and 3D technology solutions. We strive to build long-term partnerships by delivering measurable value, maintaining transparency, and ensuring client success in every project.</p>
+                        <div class="service-links">
+                          <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_923_131)"><path d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657" stroke="inherit" stroke-width="2"/><path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2"/></g><defs><clipPath id="clip0_923_131"><rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)"/></clipPath></defs></svg></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </section>
+          <!--=================================
+          Our Services -->
+
+  <!--=================================
+          Video Full Section --
+  <section class="video-bg-jarallax jarallax"
+    style="background-image: url(images/bg/bg-3.jpg); background-position: center center; background-size: cover;">
+    <div class="video-wrapper wrapper-absolute">
+      <a class="popup-youtube video-btn cursor-style btn-effect"
+        href="https://www.youtube.com/watch?v=SZEflIVnhH8&t=1s">Play</a>
+    </div>
+  </section>
+  <--=================================
+          Video Full Section -->
+
+  <!--=================================
+          Blog -->
+  <section class="space-ptb ellipse-bottom">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="section-title text-center">
+            <span class="sub-title justify-content-center"><img class="img-fluid logoonly" src="{{ url_for('static', filename='images/logoonly.svg') }}" alt="">Blog</span>
+            <h2 class="title"> Latest news and inspirational stories</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="blog-items grid-wrapper grid-xl-3 grid-md-2 grid-sm-1">
+            <div class="blog-post-wrapper blog-style-1">
+              <div class="blog-post-info">
+                <div class="post-meta">
+                  <div class="post-meta-date">December 12, 2023</div>
+                </div>
+                <h5 class="post-title"><a href="#">How to Integrate Marketing Tools into Your Design</a></h5>
+              </div>
+              <div class="blog-post-img"><img class="img-fluid" src="{{ url_for('static', filename='images/blog/01.jpg') }}" alt="" /></div>
+              <div class="blog-action-info">
+                <h5 class="post-category"><a href="#">Branding</a></h5>
+                <div class="post-link">
+                  <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_923_144)">
+                        <path
+                          d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657"
+                          stroke="inherit" stroke-width="2" />
+                        <path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_923_144">
+                          <rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)" />
+                        </clipPath>
+                      </defs>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="blog-post-wrapper blog-style-1">
+              <div class="blog-post-info">
+                <div class="post-meta">
+                  <div class="post-meta-date">February 24, 2024</div>
+                </div>
+                <h5 class="post-title"><a href="#">2024 Top SEO Features for Marketing Designs</a></h5>
+              </div>
+              <div class="blog-post-img"><img class="img-fluid" src="{{ url_for('static', filename='images/blog/02.jpg') }}" alt="" /></div>
+              <div class="blog-action-info">
+                <h5 class="post-category"><a href="#">Operations</a></h5>
+                <div class="post-link">
+                  <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_923_145)">
+                        <path
+                          d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657"
+                          stroke="inherit" stroke-width="2" />
+                        <path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_923_145">
+                          <rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)" />
+                        </clipPath>
+                      </defs>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="blog-post-wrapper blog-style-1">
+              <div class="blog-post-info">
+                <div class="post-meta">
+                  <div class="post-meta-date">May 26, 2024</div>
+                </div>
+                <h5 class="post-title"><a href="#">How can marketing help your business better?</a></h5>
+              </div>
+              <div class="blog-post-img"><img class="img-fluid" src="{{ url_for('static', filename='images/blog/03.jpg') }}" alt="" /></div>
+              <div class="blog-action-info">
+                <h5 class="post-category"><a href="#">Branding</a></h5>
+                <div class="post-link">
+                  <a class="btn-arrow" href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_923_146)">
+                        <path
+                          d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657"
+                          stroke="inherit" stroke-width="2" />
+                        <path d="M15.7602 8.12158H0.1875" stroke="inherit" stroke-width="2" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_923_146">
+                          <rect width="15.904" height="14.8437" fill="inherit" transform="translate(0.1875 0.578125)" />
+                        </clipPath>
+                      </defs>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=================================
+          Blog -->
+
+</div>
+</div>{% include 'footer.html' %}
+{% endblock %}

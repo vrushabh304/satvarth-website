@@ -1,0 +1,134 @@
+{% extends "header.html" %}
+{% block content %}
+
+{% include 'sidepanel.html' %}
+
+
+      <div class="site-content">
+         <!--=================================
+         Page Header -->
+         <div class="inner-header bg-holder" style="background-image: url('{{ url_for('static', filename='images/banner/inner-header/page-header-01.jpg') }}')';">
+          <div class="container">
+            <div class="row  justify-content-center">
+              <div class="col-md-12 text-center">
+                <h1 class="title">Page Right Sidebar</h1>
+                <p>Our Expertise. Know more about what we do</p>
+              </div>
+            </div>
+          </div>
+         </div>
+
+         <div class="content-wrapper">
+
+            <!--=================================
+            Blog -->
+            <section class="space-ptb ellipse-bottom">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-8">
+                        <a class="sidebar-btn d-lg-none" href="#offcanvasSidebar" data-bs-toggle="offcanvas" aria-controls="offcanvasSidebar">
+                          <i class="fa-solid fa-outdent"></i>Show Sidebar
+                        </a>
+                        <div class="mb-0">
+                          <h4 class="title">Page Right Sidebar</h4>
+                          <p>We also know those epic stories, those modern-day legends surrounding the early failures of such supremely successful folks as Michael Jordan and Bill Gates. We can look a bit further back in time to Albert Einstein or even further back to Abraham Lincoln. What made each of these people so successful? Motivation. Motivation is not an accident or something that someone else can give you — you are the only one with the power to motivate you. Motivation cannot be an external force, it must come from within as the natural product of your desire to achieve something and your belief that you are capable to succeed at your goal. We know this in our gut, but what can we do about it? How can we motivate ourselves? One of the most difficult aspects of achieving success is staying motivated over the long haul.</p>
+                          
+                          <p>The best way is to develop and follow a plan. Start with your goals in mind and then work backwards to develop the plan. What steps are required to get you to the goals? Make the plan as detailed as possible. The first thing to remember about success is that it is a process – nothing more, nothing less. There is really no magic to it and it’s not reserved only for a select few people. As such, success really has nothing to do with luck, coincidence or fate. It really comes down to understanding the steps in the process and then executing on those steps.</p>
+
+                          <div class="list-wrapper my-4 py-3">
+                            <ul class="list">
+                              <li><i class="fa-regular fa-circle-right text-primary"></i>Making the decision Reviewing any branding</li>
+                              <li><i class="fa-regular fa-circle-right text-primary"></i>Clarity – developing the Vision</li>
+                              <li><i class="fa-regular fa-circle-right text-primary"></i>Understanding the price and having the willingness to pay that price</li>
+                              <li><i class="fa-regular fa-circle-right text-primary"></i>Belief – believing in yourself and those around you</li>
+                              <li><i class="fa-regular fa-circle-right text-primary"></i>Taking action – practice Ready, Fire, Aim…</li>
+                              <li><i class="fa-regular fa-circle-right text-primary"></i>Quidem error quae illo excepturi nostrum blanditiis laboriosam</li>
+                            </ul>
+                          </div>
+
+                          <p>The other virtues practice in succession by Franklin were silence, order, resolution, frugality, industry, sincerity, Justice, moderation, cleanliness, tranquility, chastity and humility. For the summary order he followed a little scheme of employing his time each day. From five to seven each morning he spent in bodily personal attention, saying a short prayer, thinking over the day’s business and resolutions, studying and eating breakfast. From eight till twelve he worked at his trade. From twelve to one he read or overlooked his accounts and dined. From two to five he worked at his trade. The rest of the evening until 10 he spent in music, or diversion of some sort. This time is used also to put things in their places. In the last thing before retiring was examination of the day. At the age of 79, he ascribed his health to temperance; the acquisition of misfortune to industry and frugality; the confidence of his country to sincerity and justice.</p>
+
+                          <p class="mb-5">The best way is to develop and follow a plan. Start with your goals in mind and then work backwards to develop the plan. What steps are required to get you to the goals? Make the plan as detailed as possible. Try to visualize and then plan for, effort, sacrifice, money or perhaps, every possible setback. Commit the plan to paper and then keep it with you at all times. Review it regularly and ensure that every step takes you closer to your Vision and Goals. If the plan doesn’t support the vision then change it!</p>
+
+                          <a class="btn btn-effect" href="#"><span>About Us</span></a>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 mt-5 mt-lg-0">
+                      <div class="offcanvas-lg mobile-sidebar offcanvas-sidebar offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebar">
+                          <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasSidebar" aria-label="Close">
+                              <i class="fa-solid fa-xmark"></i>
+                            </button>
+                          </div>
+                          <div class="offcanvas-body">
+                            <div class="sidebar mobile-offcanvas ps-0 pe-0 ps-xl-5 pe-xl-5 ps-lg-4">
+                               <div class="widget widget-search">
+                                <div class="search">
+                                  <input type="search" id="search-input" class="form-control" placeholder="Search">
+                                  <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                               </div>
+                               <div class="widget widget-recent-posts">
+                                <h5 class="widget-title">Recent Posts</h5>
+                                <div class="recent-posts">
+                                  <div class="posts-img"><img class="img-fluid" src="{{ url_for('static',filename='images/blog/01.jpg') }}" alt=""></div>
+                                  <div class="post-info">
+                                    <a href="{{ url_for('blog_detail') }}" class="post-title">Creative Content and Regular Updates</a>
+                                    <span class="post-date">Mar 26, 2024</span>
+                                  </div>
+                                </div>
+                                <div class="recent-posts">
+                                  <div class="posts-img"><img class="img-fluid" src="{{ url_for('static',filename='images/blog/02.jpg') }}" alt=""></div>
+                                  <div class="post-info">
+                                    <a href="{{ url_for('blog_detail') }}" class="post-title">Copywriting Craft and Knowledge</a>
+                                    <span class="post-date">Mar 26, 2024</span>
+                                  </div>
+                                </div>
+                                <div class="recent-posts">
+                                  <div class="posts-img"><img class="img-fluid" src="{{ url_for('static',filename='images/blog/03.jpg') }}" alt=""></div>
+                                  <div class="post-info">
+                                    <a href="{{ url_for('blog_detail') }}" class="post-title">SEO Strategies and Best Practices</a>
+                                    <span class="post-date">Mar 26, 2024</span>
+                                  </div>
+                                </div>
+                               </div>
+                               <div class="widget widget-categories">
+                                <h5 class="widget-title">Categories</h5>
+                                <ul class="categories-list">
+                                  <li><a href="#">Lifestyle</a></li>
+                                  <li><a href="#">WordPress</a></li>
+                                  <li><a href="#">Creative</a></li>
+                                  <li><a href="#">Business</a></li>
+                                  <li><a href="#">Design</a></li>
+                                </ul>
+                               </div>
+                               <div class="widget tags-widget">
+                                <h5 class="widget-title">Tag</h5>
+                                <ul class="tag-list">
+                                  <li><a href="#">Lifestyle</a></li>
+                                  <li><a href="#">WordPress</a></li>
+                                  <li><a href="#">Creative</a></li>
+                                  <li><a href="#">Business</a></li>
+                                  <li><a href="#">Design</a></li>
+                                </ul>
+                               </div>
+                               <div class="widget widget-newsletter">
+                                  <h5 class="widget-title">Newsletter</h5>
+                                  <p>Just Subscribe and we'll send you a notification by email.</p>
+                                  <form class="newsletter-form">
+                                     <input type="text" class="form-control" placeholder="Enter Your Email">
+                                     <button type="submit" class="subscribe-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                                  </form>
+                               </div>
+                            </div>
+                          </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+        </div>
+      </div>
+
+      {% include 'footer.html' %}
+{% endblock %}
