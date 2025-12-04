@@ -1,7 +1,7 @@
-{% extends "header.html" %}
+{% extends "base.html" %}
 {% block content %}
 
-
+{% include 'header.html' %}
 {% include 'sidepanel.html' %}
 <!--=================================
         Main Banner -->
@@ -1009,5 +1009,6 @@ Our mission is to empower progress through technology, integrity, and lasting im
           Blog -->
 
 </div>
-</div>{% include 'footer.html' %}
+</div>
+{% include 'footer.html' %}
 {% endblock %}
