@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+{% include 'sidepanel.html' %}
+
+      <div class="site-content">
+        <!--=================================
+        Page Header -->
+        <section class="vision-hero-section inner-header"
+             style="background-image: url('{{ url_for('static', filename='images/banner/inner-header/page-header-01.jpg') }}');">
+        <div class="overlay"></div>
+          <div class="container">
+            <div class="row  justify-content-center">
+              <div class="col-md-12 text-center">
+                <h1 class="title">Samantha Brown</h1>
+                <p>Quality Assurance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+<br><br>
+        <div class="content-wrapper">
+
+          <!--=================================
+          Team -->
+          <section class="space-ptb ellipse-bottom">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                   <div class="section-title mb-4">
+                      <h3 class="title mb-2">Samantha Brown</h3>
+                      <p>Quality Assurance</p>
+                   </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-5">
+                  <div class="team-style-1">
+                    <img class="img-fluid rounded" src="{{ url_for('static',filename='images/team/06.jpg') }}" alt="Member Image" />
+                    <div class="team-social d-flex justify-content-end">
+                      <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-7 ps-3 ps-md-5 mt-5 mt-md-0">
+                  <div class="skill-wrapper mb-5">
+                    <div class="skill skill-style-2">
+                      <div class="skill-bar" data-percent="60" data-delay="0" data-type="%">
+                        <div class="skill-title">Graphic Design</div>
+                      </div>
+                    </div>
+                    <div class="skill skill-style-2">
+                      <div class="skill-bar" data-percent="90" data-delay="0" data-type="%">
+                        <div class="skill-title">WordPress</div>
+                      </div>
+                    </div>
+                    <div class="skill skill-style-2">
+                      <div class="skill-bar" data-percent="45" data-delay="0" data-type="%">
+                        <div class="skill-title">Javascript</div>
+                      </div>
+                    </div>
+                    <div class="skill skill-style-2">
+                      <div class="skill-bar" data-percent="95" data-delay="0" data-type="%">
+                        <div class="skill-title">CSS, HTML5</div>
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="title">Biography</h4>
+                  <p>So how do we get clarity? Simply by asking ourselves lots of questions: What do I really want? What does success look like to me? Why do I want a particular thing? How will this achievement change my life? How can I use this success to make a difference for others?</p>
+                  <p>The best way is to develop and follow a plan. Start with your goals in mind and then work backwards to develop the plan. What steps are required to get you to the goals? Make the plan as detailed as possible.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+{% include 'footer.html' %}
+{% endblock %}

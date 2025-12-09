@@ -3,6 +3,132 @@
 
 
 {% include 'sidepanel.html' %}
+<style>
+    .next-color{
+    color: #ffffff;
+  }
+  .next-color:hover{
+    color: #798ae3;
+  }
+  .size-box-music-sectors{
+    width: 100%;
+    height: 265px;
+  }
+  .advanced-features{
+    width: 100%;
+    height: 265px;
+  }
+
+  .advanced-features {
+  padding: 50px 0;
+}
+  @media (max-width: 1400px) {
+    .advanced-features {
+    padding: 120px 0;
+  }
+
+ .size-box-music-sectors {
+    width: 100%;
+    height: 300px;
+  } 
+}
+@media (max-width: 1024px) {
+
+  .size-box-music-sectors {
+    width: 100%;
+    height: 370px;
+  }
+}
+
+/* <= 1199px */
+@media (max-width: 1199px) {
+    .advanced-features {
+    padding: 100px 0;
+  }
+
+   .size-box-music-sectors {
+    width: 100%;
+    height: 390px;
+  }
+}
+
+/* <= 991px (tablets landscape) */
+@media (max-width: 991px) {
+    .advanced-features {
+    padding: 0px 0;
+  }
+
+  .size-box-music-sectors {
+    width: 100%;
+    height: 290px;
+  }
+}
+
+/* <= 767px (tablets portrait / big phones) */
+@media (max-width: 767px) {
+    .advanced-features {
+    padding: 70px 0;
+  }
+
+  .size-box-music-sectors {
+    width: 100%;      /* take full width of parent */
+    max-width: 100%;
+  }
+}
+
+/* <= 575px (small phones) */
+@media (max-width: 575px) {
+    .advanced-features {
+    padding: 50px 0;
+  }
+  
+  .size-box-music-sectors {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+  }
+}
+
+.music-sectors {
+    padding: 20px 0 0;
+  }
+
+  @media (max-width: 1400px) {
+    .music-sectors {
+      padding: 0px 0 0;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .music-sectors{
+      padding: 0px 0 0;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .music-sectors {
+      padding: 10px 0 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .music-sectors {
+      padding: 0px 0 0;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .music-sectors {
+      padding: 10px 0 0px 0px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .music-sectors {
+      padding: 10px 0 0px 0px;
+    }
+}
+</style>
 <!--=================================
         Music Banner -->
 <div class="main-banner main-banner-2">
@@ -138,7 +264,7 @@
 
     <!--=================================
           Music Industry Sectors -->
-    <section class="space-pt bg-black">
+    <section class="music-sectors bg-black">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-10">
@@ -151,21 +277,21 @@
             </div>
             <div class="row mt-5">
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
-                        <i class="fas fa-user-music" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
+                    <div class="text-center size-box-music-sectors p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+                        <i class="fa fa-music" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
                         <h5>Independent Artists</h5>
                         <p>Tools and platforms for solo artists to create, distribute, and monetize their music.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+                    <div class="text-center size-box-music-sectors p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
                         <i class="fas fa-building" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
                         <h5>Record Labels</h5>
                         <p>Comprehensive management systems for artist rosters, releases, and royalty distribution.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+                    <div class="text-center size-box-music-sectors  p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
                         <i class="fas fa-broadcast-tower"
                             style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
                         <h5>Radio Stations</h5>
@@ -173,7 +299,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+                    <div class="text-center size-box-music-sectors p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
                         <i class="fas fa-guitar" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
                         <h5>Music Schools</h5>
                         <p>Educational platforms for music learning, practice tracking, and virtual lessons.</p>
@@ -185,7 +311,7 @@
 
     <!--=================================
           Music Technology Features -->
-    <section class="space-ptb">
+    <section class="advanced-features">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-10">
@@ -199,43 +325,42 @@
             </div>
             <div class="row mt-5">
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+                    <div class="text-center size-box-advanced-features p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
                         <i class="fas fa-brain" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
                         <h5>AI Music Recommendation</h5>
                         <p>Machine learning algorithms for personalized music discovery and playlist generation.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
-                        <i class="fas fa-waveform-path"
-                            style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
+                    <div class="text-center size-box-advanced-features p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+                        <i class="fas fa-wave-square" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
                         <h5>High-Fidelity Audio</h5>
                         <p>Lossless audio streaming and professional-grade audio processing capabilities.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+                    <div class="text-center size-box-advanced-features p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
                         <i class="fas fa-users" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
                         <h5>Social Music Features</h5>
                         <p>Social sharing, collaborative playlists, and community features for music lovers.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+                    <div class="text-center size-box-advanced-features p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
                         <i class="fas fa-mobile-alt" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
                         <h5>Cross-Platform Sync</h5>
                         <p>Seamless synchronization across mobile, web, and desktop applications.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+                    <div class="text-center size-box-advanced-features p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
                         <i class="fas fa-chart-bar" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
                         <h5>Analytics & Insights</h5>
                         <p>Detailed analytics for artists and labels on streaming, engagement, and revenue.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+                    <div class="text-center size-box-advanced-features  p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
                         <i class="fas fa-dollar-sign" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
                         <h5>Monetization Tools</h5>
                         <p>Revenue tracking, royalty distribution, and multiple monetization options for artists.</p>
@@ -404,7 +529,7 @@
                                 </g>
                             </svg>
                         </a>
-                        <a class="btn btn-outline-light" href="{{ url_for('service') }}">View All Services</a>
+                        <a class="btn next-color" href="{{ url_for('service') }}">View All Services</a>
                     </div>
                 </div>
             </div>

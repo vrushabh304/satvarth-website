@@ -3,6 +3,142 @@
 
 
 {% include 'sidepanel.html' %}
+<style>
+    .next-color{
+    color: #ffffff;
+  }
+  .next-color:hover{
+    color: #798ae3;
+  }
+
+  .property-types{
+    width: 100%;
+    height: 265px;
+  }
+  .advanced-features{
+    width: 100%;
+    height: 265px;
+  }
+
+  .advanced-features {
+  padding: 50px 0;
+}
+  @media (max-width: 1400px) {
+    .advanced-features {
+    padding: 120px 0;
+  }
+
+ .property-types {
+    width: 100%;
+    height: 300px;
+  } 
+}
+@media (max-width: 1024px) {
+
+  .property-types {
+    width: 100%;
+    height: 370px;
+  }
+}
+
+/* <= 1199px */
+@media (max-width: 1199px) {
+    .advanced-features {
+    padding: 100px 0;
+  }
+
+   .property-types {
+    width: 100%;
+    height: 390px;
+  }
+}
+
+/* <= 991px (tablets landscape) */
+@media (max-width: 991px) {
+    .advanced-features {
+    padding: 0px 0;
+  }
+
+  .property-types {
+    width: 100%;
+    height: 290px;
+  }
+}
+
+/* <= 767px (tablets portrait / big phones) */
+@media (max-width: 767px) {
+    .advanced-features {
+    padding: 70px 0;
+  }
+
+  .property-types {
+    width: 100%;      /* take full width of parent */
+    max-width: 100%;
+  }
+}
+
+/* <= 575px (small phones) */
+@media (max-width: 575px) {
+    .advanced-features {
+    padding: 50px 0;
+  }
+  
+  .property-types {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+  }
+}
+
+/* for image css */
+  .img-size{
+    width: 100%;
+    height: 300px;
+
+  }
+  /* <= 1400px */
+@media (max-width: 1400px) {
+  .img-size {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .img-size {
+    width: 100%;
+  }
+}
+
+/* <= 1199px */
+@media (max-width: 1199px) {
+  .img-size {
+    width: 100%;
+  }
+}
+
+/* <= 991px (tablets landscape) */
+@media (max-width: 991px) {
+  .img-size {
+    width: 100%;}
+}
+
+/* <= 767px (tablets portrait / big phones) */
+@media (max-width: 767px) {
+  .img-size{
+    width: 100%;      /* take full width of parent */
+    max-width: 100%;
+  }
+}
+
+/* <= 575px (small phones) */
+@media (max-width: 575px) {
+  .img-size{
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+  }
+}
+
+</style>
 <!--=================================
         Real Estate Banner -->
 <div class="main-banner main-banner-2">
@@ -133,28 +269,28 @@
       </div>
       <div class="row mt-5">
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center property-types p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-building" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Residential</h5>
             <p>Homes, apartments, and residential property management solutions.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center property-types p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-city" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Commercial</h5>
             <p>Office buildings, retail spaces, and commercial property platforms.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center property-types p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-warehouse" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Industrial</h5>
             <p>Warehouses, manufacturing facilities, and industrial property management.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center property-types p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-seedling" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Land Development</h5>
             <p>Raw land, development projects, and investment property solutions.</p>
@@ -178,42 +314,42 @@
       </div>
       <div class="row mt-5">
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center advanced-features p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-brain" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>AI-Powered Valuation</h5>
             <p>Automated property valuation using machine learning and market data analysis.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center advanced-features p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-mobile-alt" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Mobile-First Design</h5>
             <p>Responsive platforms optimized for mobile devices and on-the-go property management.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center advanced-features  p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-file-contract" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Digital Contracts</h5>
             <p>Electronic signature integration and digital document management for seamless transactions.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center advanced-features p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-map-marked-alt" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Interactive Maps</h5>
             <p>Advanced mapping features with neighborhood insights and location-based search.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center advanced-features p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-calculator" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Financial Tools</h5>
             <p>Mortgage calculators, ROI analysis, and investment property evaluation tools.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center advanced-features  p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-bell" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Smart Notifications</h5>
             <p>Automated alerts for price changes, new listings, and important property updates.</p>
@@ -239,7 +375,7 @@
         <div class="col-lg-4 mb-4">
           <div class="case-studies-wrapper case-studies-style-1">
             <div class="case-studies-img">
-              <img class="img-fluid" src="{{ url_for('static',filename='images/case-studies/09.jpg') }}" alt="Property Portal">
+              <img class="img-fluid img-size" src="{{ url_for('static',filename='images/case-studies/09.jpg') }}" alt="Property Portal">
             </div>
             <div class="case-studies-info">
               <div class="case-studies-info-inner">
@@ -254,7 +390,7 @@
         <div class="col-lg-4 mb-4">
           <div class="case-studies-wrapper case-studies-style-1">
             <div class="case-studies-img">
-              <img class="img-fluid" src="{{ url_for('static',filename='images/case-studies/08.jpg') }}" alt="Property Management">
+              <img class="img-fluid img-size" src="{{ url_for('static',filename='images/case-studies/08.jpg') }}" alt="Property Management">
             </div>
             <div class="case-studies-info">
               <div class="case-studies-info-inner">
@@ -269,7 +405,7 @@
         <div class="col-lg-4 mb-4">
           <div class="case-studies-wrapper case-studies-style-1">
             <div class="case-studies-img">
-              <img class="img-fluid" src="{{ url_for('static',filename='images/case-studies/07.jpg') }}" alt="Real Estate CRM">
+              <img class="img-fluid img-size" src="{{ url_for('static',filename='images/case-studies/07.jpg') }}" alt="Real Estate CRM">
             </div>
             <div class="case-studies-info">
               <div class="case-studies-info-inner">
@@ -356,7 +492,7 @@
                 </g>
               </svg>
             </a>
-            <a class="btn btn-outline-light" href="{{ url_for('service') }}">View All Services</a>
+            <a class="btn next-color" href="{{ url_for('service') }}">View All Services</a>
           </div>
         </div>
       </div>

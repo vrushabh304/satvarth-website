@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% include 'sidepanel.html' %}
+
+<div class="site-content">
+    <div class="inner-header bg-holder"
+        style="background-image: url('{{ url_for('static', filename='images/blog/banner-blog.png') }}');">
+        <!-- this not error  -->
+        <div class="container">
+            <div class="row  justify-content-center">
+
+                <div class="col-md-12 text-center">
+                    <br><br>
+                    <h1 class="title">Business Blog</h1>
+                    <p>Insights Marketing and Creative Ideas Blog Hub</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="content-wrapper">
+
+        <!-- BLOG CONTENT -->
+        <section class="space-ptb ellipse-bottom">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+
+                        <div class="blog-single format-standard">
+
+                            <!-- BLOG HEADER -->
+                            <div class="post-content-header">
+                                <div class="post-meta">
+                                    <ul>
+                                        <li class="post-meta-category"><a href="#">Business</a></li>
+                                        <li class="post-meta-date">May 26, 2024</li>
+                                    </ul>
+                                </div>
+
+                                <h3 class="post-title">Insights Marketing and Creative Ideas Blog Hub</h3>
+
+                                <div class="blog-single-info">
+
+                                    <!-- AUTHOR (NO IMAGE) -->
+                                    <div class="blog-author">
+                                        <div class="blog-info">
+                                            <h6 class="author-name">Written by</h6>
+                                            <p>James Smith</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- SOCIAL ICONS -->
+                                    <div class="social-icon">
+                                        <ul>
+                                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- BLOG BODY -->
+                            <div class="blog-post-content">
+                                <div class="post-content-body">
+
+                                    <p>
+                                        Marketing is evolving at a rapid pace, and businesses that rely only
+                                        on traditional strategies fall behind quickly. Creative insights,
+                                        innovative thinking, and data-driven planning are now essential for
+                                        sustainable growth in a competitive market.
+                                    </p>
+
+                                    <p>
+                                        A modern marketing hub must balance creativity with strategic execution.
+                                        Businesses that embrace flexible ideas and experiment with fresh concepts
+                                        consistently outperform brands that repeat outdated methods.
+                                    </p>
+
+                                    <h5 class="mt-4">1. Blending Creativity with Strategy</h5>
+                                    <p>
+                                        Creativity alone can attract attention, but strategic messaging ensures
+                                        the audience understands the value. Effective marketing blends data, UX,
+                                        storytelling, and design to communicate with clarity and impact.
+                                    </p>
+
+                                    <h5 class="mt-4">2. Using Insights to Drive Smarter Campaigns</h5>
+                                    <p>
+                                        Customer behavior, search trends, engagement patterns, and purchasing habits
+                                        reveal what truly matters to your audience. Businesses that analyze these
+                                        insights
+                                        create campaigns that convert better and resonate deeper.
+                                    </p>
+
+                                    <h5 class="mt-4">3. Creative Ideas That Strengthen Brand Identity</h5>
+                                    <p>
+                                        Consistent creative direction — tone, style, messaging, values — builds trust.
+                                        A strong brand identity makes your content recognizable across every channel,
+                                        from social media to websites to email campaigns.
+                                    </p>
+
+                                    <div class="list-wrapper my-4">
+                                        <ul class="list col-2 col-xs-1">
+                                            <li>Focus on data-backed creative decisions</li>
+                                            <li>Design content that reflects your unique brand voice</li>
+                                            <li>Experiment with new formats to increase engagement</li>
+                                            <li>Use storytelling to deepen customer connection</li>
+                                        </ul>
+                                    </div>
+
+                                    <blockquote class="blockquote blockquote-style-1 my-5">
+                                        <div class="blockquote-content">
+                                            <p>
+                                                "Creative ideas become powerful only when aligned with clear business
+                                                goals.
+                                                Innovation without purpose is noise — purposeful innovation is impact."
+                                            </p>
+                                        </div>
+                                    </blockquote>
+
+                                    <h5 class="mt-4">4. Building a Scalable Marketing Hub</h5>
+                                    <p class="mb-0">
+                                        A well-structured marketing hub centralizes insights, content ideas, strategies,
+                                        and performance metrics. This helps teams stay consistent, collaborate smoothly,
+                                        and maintain a competitive edge in today’s fast-moving business environment.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}

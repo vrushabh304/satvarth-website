@@ -3,6 +3,92 @@
 
 
 {% include 'sidepanel.html' %}
+<style>
+    .next-color{
+    color: #ffffff;
+  }
+  .next-color:hover{
+    color: #798ae3;
+  }
+  .travel-sectors{
+    width: 100%;
+    height: 265px;
+  }
+  .advanced-features{
+    width: 100%;
+    height: 265px;
+  }
+
+  .advanced-features {
+  padding: 50px 0;
+}
+  @media (max-width: 1400px) {
+    .advanced-features {
+    padding: 120px 0;
+  }
+
+ .travel-sectors {
+    width: 100%;
+    height: 300px;
+  } 
+}
+@media (max-width: 1024px) {
+
+  .travel-sectors {
+    width: 100%;
+    height: 370px;
+  }
+}
+
+/* <= 1199px */
+@media (max-width: 1199px) {
+    .advanced-features {
+    padding: 100px 0;
+  }
+
+   .travel-sectors {
+    width: 100%;
+    height: 390px;
+  }
+}
+
+/* <= 991px (tablets landscape) */
+@media (max-width: 991px) {
+    .advanced-features {
+    padding: 0px 0;
+  }
+
+  .travel-sectors {
+    width: 100%;
+    height: 290px;
+  }
+}
+
+/* <= 767px (tablets portrait / big phones) */
+@media (max-width: 767px) {
+    .advanced-features {
+    padding: 70px 0;
+  }
+
+  .travel-sectors {
+    width: 100%;      /* take full width of parent */
+    max-width: 100%;
+  }
+}
+
+/* <= 575px (small phones) */
+@media (max-width: 575px) {
+    .advanced-features {
+    padding: 50px 0;
+  }
+  
+  .travel-sectors {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+  }
+}
+</style>
 <!--=================================
         Travel Banner -->
 <div class="main-banner main-banner-2">
@@ -133,28 +219,28 @@
       </div>
       <div class="row mt-5">
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center travel-sectors p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-building" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Travel Agencies</h5>
             <p>Complete booking and management systems for travel agencies and tour operators.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center travel-sectors p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-bed" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Hotels & Resorts</h5>
             <p>Property management and guest experience solutions for hospitality businesses.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center travel-sectors p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-car" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Car Rentals</h5>
             <p>Fleet management and rental booking systems for car rental companies.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center travel-sectors p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-ship" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Cruise Lines</h5>
             <p>Comprehensive cruise management and passenger experience platforms.</p>
@@ -285,8 +371,8 @@
             <span class="sub-title justify-content-center"><img class="img-fluid logoonly" src="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Get Started</span>
             <h2 class="title">Ready to Transform Your Travel Business?</h2>
             <p class="mb-4">Let's discuss how our travel technology solutions can enhance your customer experience and boost your business growth.</p>
-            <a class="btn btn-effect me-3" href="{{ url_for('contact_us') }}>
-              <span>Book Demo</span>
+            <a class="btn btn-effect me-3" href="{{ url_for('contact_us') }}">
+              <span> Book Demo </span>
               <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_59_257)">
                   <path d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293" stroke="white" stroke-width="2" />
@@ -294,7 +380,7 @@
                 </g>
               </svg>
             </a>
-            <a class="btn btn-outline-light" href="{{ url_for('service') }}">View All Services</a>
+            <a class="btn next-color" href="{{ url_for('service') }}">View All Services</a>
           </div>
         </div>
       </div>

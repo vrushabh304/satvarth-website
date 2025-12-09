@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% include 'sidepanel.html' %}
+
+<div class="site-content mission-page">
+
+    <!-- ==========================
+         HERO SECTION
+    =========================== -->
+    <section class="vision-hero-section inner-header"
+             style="background-image: url('{{ url_for('static', filename='images/banner/inner-header/page-header-01.jpg') }}');">
+        <div class="overlay"></div>
+
+        <div class="container text-center">
+            <h1 class="mission-title">Our Mission</h1>
+            <p class="mission-subtitle">
+                Delivering reliable, scalable and intelligent solutions that drive real business impact.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- ==========================
+         MAIN SECTION
+    =========================== -->
+    <section class="mission-main">
+        <div class="container mission-row">
+
+            <!-- LEFT TEXT -->
+            <div class="mission-left">
+                <span class="mission-label">OUR PURPOSE</span>
+
+                <h2>We Build Technology That Works for You — Not Against You</h2>
+
+                <p>
+                    Our mission is simple: create digital products that enhance efficiency, reduce operational friction,
+                    and elevate user experience. We focus on building systems that are stable, scalable, and easy to use.
+                </p>
+
+                <p>
+                    Whether you're expanding your services, improving internal workflows, or enhancing customer journeys,
+                    our mission is to ensure your technology becomes a true advantage — not an obstacle.
+                </p>
+
+                <p>
+                    We don’t just deliver software.  
+                    We deliver **impact**.
+                </p>
+
+                <a href="{{ url_for('team') }}" class="mission-btn">Talk to Our Team →</a>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="mission-right">
+                <img src="{{ url_for('static', filename='images/our_mission.png') }}" alt="Mission Image" class="mission-img">
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<style>
+    /* ===========================================
+   OUR MISSION PAGE (Dark + Blue Tech Style)
+=========================================== */
+
+.mission-page {
+    background: #000e1d;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HERO SECTION */
+.mission-hero-section {
+    position: relative;
+    padding: 150px 0 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mission-hero-section .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.85)
+    );
+}
+
+.mission-hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.mission-title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.mission-subtitle {
+    font-size: 18px;
+    color: #d5e0f0;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+/* MAIN SECTION */
+.mission-main {
+    padding: 90px 0;
+    background: #000814;
+}
+
+.mission-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.mission-label {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #4da8ff;
+}
+
+.mission-left h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 18px 0 20px;
+}
+
+.mission-left p {
+    color: #d4e1ef;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+
+/* BUTTON */
+.mission-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #4da8ff;
+    border: 1px solid #4da8ff;
+    transition: all 0.3s ease;
+}
+
+.mission-btn:hover {
+    background: #4da8ff;
+    color: #001020;
+}
+
+
+/* RIGHT IMAGE */
+.mission-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 18px rgba(0, 150, 255, 0.35);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .mission-row {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .mission-left h2 {
+        font-size: 32px;
+    }
+
+    .mission-img {
+        margin-top: 20px;
+    }
+
+    .mission-title {
+        font-size: 38px;
+    }
+}
+
+</style>
+{% include 'footer.html' %}
+{% endblock %}

@@ -2,20 +2,146 @@
 {% block content %}
 
 {% include 'sidepanel.html' %}
+<style>
+  .next-color {
+    color: #ffffff;
+  }
+
+  .next-color:hover {
+    color: #798ae3;
+  }
+  /* Manufacturing Transformations in image  */
+  .img-size{
+    width: 100%;
+    height: 300px;
+
+  }
+  /* Smart Manufacturing Technologies */
+  .size-box{
+    width: 100%;
+    height: 265px;
+
+  }
+  /* <= 1400px */
+@media (max-width: 1400px) {
+  .img-size {
+    width: 100%;
+  }
+
+ .size-box {
+    width: 100%;
+    height: 370px;
+  } 
+}
+@media (max-width: 1024px) {
+  .img-size {
+    width: 100%;
+  }
+
+  .size-box {
+    width: 100%;
+    height: 370px;
+  }
+}
+
+/* <= 1199px */
+@media (max-width: 1199px) {
+  .img-size {
+    width: 100%;
+  }
+
+   .size-box {
+    width: 100%;
+    height: 390px;
+  }
+}
+
+/* <= 991px (tablets landscape) */
+@media (max-width: 991px) {
+  .img-size {
+    width: 100%;
+  }
+
+  .size-box {
+    width: 100%;
+    height: 290px;
+  }
+}
+
+/* <= 767px (tablets portrait / big phones) */
+@media (max-width: 767px) {
+  .img-size,
+  .size-box {
+    width: 100%;      /* take full width of parent */
+    max-width: 100%;
+  }
+}
+
+/* <= 575px (small phones) */
+@media (max-width: 575px) {
+  .img-size,
+  .size-box {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+  }
+}
+
+
+  /* industry-Smart-manufacturing-technologies */
+
+  /* Success Stories Padding */
+  .industry-Smart-manufacturing-technologies {
+    padding: 40px 0 0;
+  }
+
+  @media (max-width: 1400px) {
+    .industry-Smart-manufacturing-technologies {
+      padding: 120px 0 0;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .industry-Smart-manufacturing-technologies {
+      padding: 10px 0 0;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .industry-Smart-manufacturing-technologies {
+      padding: 90px 0 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .industry-Smart-manufacturing-technologies {
+      padding: 70px 0 0;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .industry-Smart-manufacturing-technologies {
+      padding: 50px 0 0px 0px;
+    }
+  }
+</style>
 <!--=================================
         Manufacturing Banner -->
 <div class="main-banner main-banner-2">
   <div class="banner-inner">
-    <img class="img-fluid banner-bg" src="{{ url_for('static',filename='images/banner/banner-02/bg.jpg') }}" alt="Manufacturing Technology Solutions">
+    <img class="img-fluid banner-bg" src="{{ url_for('static',filename='images/banner/banner-02/bg.jpg') }}"
+      alt="Manufacturing Technology Solutions">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="banner-conent">
-            <span class="sub-title"><img class="img-fluid logoonly" rc="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Manufacturing Technology</span>
+            <span class="sub-title"><img class="img-fluid logoonly"
+                rc="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Manufacturing Technology</span>
             <h1 class="title mb-2 mb-md-4">Powering Industry 4.0</h1>
             <div class="conent">
-              <p class="small-text">Transforming manufacturing operations with smart technology solutions that optimize production, reduce costs, and enhance quality control through automation and data analytics.</p>
-              
+              <p class="small-text">Transforming manufacturing operations with smart technology solutions that optimize
+                production, reduce costs, and enhance quality control through automation and data analytics.</p>
+
             </div>
             <div class="row justify-content-start align-items-center">
               <div class="col-lg-3 col-md-4 col-sm-4 order-sm-0 order-2">
@@ -23,7 +149,9 @@
                   <span>Get Quote</span>
                   <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_59_253)">
-                      <path d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293" stroke="white" stroke-width="2" />
+                      <path
+                        d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293"
+                        stroke="white" stroke-width="2" />
                       <path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2" />
                     </g>
                   </svg>
@@ -31,7 +159,8 @@
               </div>
               <div class="col-lg-3 col-md-4 col-sm-5 order-sm-0 order-1">
                 <div class="counter counter-style-1 pt-0">
-                  <div class="counter-number"><span class="timer mb-0" data-to="150" data-speed="2000">150</span><span class="suffix">+</span></div>
+                  <div class="counter-number"><span class="timer mb-0" data-to="150" data-speed="2000">150</span><span
+                      class="suffix">+</span></div>
                   <div class="counter-info"><span class="counter-title">Manufacturing Plants Automated</span></div>
                 </div>
               </div>
@@ -52,12 +181,14 @@
       <div class="row">
         <div class="col-xxl-7 col-lg-8">
           <div class="section-title mb-lg-0">
-            <span class="sub-title"><img class="img-fluid logoonly" rc="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Manufacturing Solutions</span>
+            <span class="sub-title"><img class="img-fluid logoonly"
+                rc="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Manufacturing Solutions</span>
             <h2 class="title mb-0">Smart Manufacturing Technology Solutions</h2>
           </div>
         </div>
         <div class="col-xxl-5 col-lg-4 align-self-end">
-          <p class="mb-0 ps-xxl-5">From small workshops to large industrial facilities, we provide cutting-edge technology solutions that drive efficiency, quality, and innovation in manufacturing.</p>
+          <p class="mb-0 ps-xxl-5">From small workshops to large industrial facilities, we provide cutting-edge
+            technology solutions that drive efficiency, quality, and innovation in manufacturing.</p>
         </div>
       </div>
 
@@ -70,7 +201,8 @@
               </div>
               <div class="service-content">
                 <h5 class="service-title">Manufacturing Execution Systems (MES)</h5>
-                <p>Real-time production monitoring and control systems that optimize manufacturing processes, track work orders, and ensure quality compliance.</p>
+                <p>Real-time production monitoring and control systems that optimize manufacturing processes, track work
+                  orders, and ensure quality compliance.</p>
               </div>
             </div>
           </div>
@@ -83,7 +215,8 @@
               </div>
               <div class="service-content">
                 <h5 class="service-title">Industrial Automation</h5>
-                <p>Advanced automation solutions including robotics integration, PLC programming, and SCADA systems for enhanced productivity and safety.</p>
+                <p>Advanced automation solutions including robotics integration, PLC programming, and SCADA systems for
+                  enhanced productivity and safety.</p>
               </div>
             </div>
           </div>
@@ -96,7 +229,8 @@
               </div>
               <div class="service-content">
                 <h5 class="service-title">Production Analytics</h5>
-                <p>Data-driven insights and predictive analytics for production optimization, equipment maintenance, and quality improvement initiatives.</p>
+                <p>Data-driven insights and predictive analytics for production optimization, equipment maintenance, and
+                  quality improvement initiatives.</p>
               </div>
             </div>
           </div>
@@ -109,7 +243,8 @@
               </div>
               <div class="service-content">
                 <h5 class="service-title">Supply Chain Management</h5>
-                <p>Integrated supply chain solutions for inventory management, supplier coordination, and logistics optimization across the manufacturing ecosystem.</p>
+                <p>Integrated supply chain solutions for inventory management, supplier coordination, and logistics
+                  optimization across the manufacturing ecosystem.</p>
               </div>
             </div>
           </div>
@@ -120,40 +255,41 @@
 
   <!--=================================
           Industry 4.0 Features -->
-  <section class="space-pt bg-black">
+  <section class="industry-Smart-manufacturing-technologies bg-black">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10">
           <div class="section-title text-center">
-            <span class="sub-title justify-content-center"><img class="img-fluid logoonly" rc="{{ url_for('static',filename='images/logoonly.svg') }}" alt="">Industry 4.0</span>
+            <span class="sub-title justify-content-center"><img class="img-fluid logoonly"
+                rc="{{ url_for('static',filename='images/logoonly.svg') }}" alt="">Industry 4.0</span>
             <h2 class="title">Smart Manufacturing Technologies</h2>
           </div>
         </div>
       </div>
       <div class="row mt-5">
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="size-box text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-wifi" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>IoT Integration</h5>
             <p>Connected devices and sensors for real-time monitoring and data collection.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="size-box text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-brain" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>AI & Machine Learning</h5>
             <p>Predictive maintenance and quality control through artificial intelligence.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="size-box text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-cloud" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Cloud Manufacturing</h5>
             <p>Scalable cloud-based manufacturing systems and remote monitoring capabilities.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="size-box text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-cube" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Digital Twin</h5>
             <p>Virtual replicas of physical systems for simulation and optimization.</p>
@@ -170,7 +306,8 @@
       <div class="row justify-content-center">
         <div class="col-md-10">
           <div class="section-title text-center">
-            <span class="sub-title justify-content-center"><img class="img-fluid logoonly" rc="{{ url_for('static',filename='images/logoonly.svg') }}" alt="">Success Stories</span>
+            <span class="sub-title justify-content-center"><img class="img-fluid logoonly"
+                rc="{{ url_for('static',filename='images/logoonly.svg') }}" alt="">Success Stories</span>
             <h2 class="title">Manufacturing Transformations</h2>
           </div>
         </div>
@@ -179,13 +316,15 @@
         <div class="col-lg-4 mb-4">
           <div class="case-studies-wrapper case-studies-style-1">
             <div class="case-studies-img">
-              <img class="img-fluid" rc="{{ url_for('static',filename='images/case-studies/07.jpg') }}" alt="Automotive Manufacturing">
+              <img class="img-size img-fluid" src="{{ url_for('static',filename='images/case-studies/07.jpg') }}"
+                alt="Automotive Manufacturing">
             </div>
             <div class="case-studies-info">
               <div class="case-studies-info-inner">
                 <h3 class="case-studies-title">Automotive Assembly Line</h3>
                 <div class="case-studies-content">
-                  <div class="case-studies-description">Automated production line with 35% efficiency improvement and 50% reduction in defects through IoT integration.</div>
+                  <div class="case-studies-description">Automated production line with 35% efficiency improvement and
+                    50% reduction in defects through IoT integration.</div>
                 </div>
               </div>
             </div>
@@ -194,13 +333,15 @@
         <div class="col-lg-4 mb-4">
           <div class="case-studies-wrapper case-studies-style-1">
             <div class="case-studies-img">
-              <img class="img-fluid" rc="{{ url_for('static',filename='images/case-studies/08.jpg') }}" alt="Electronics Manufacturing">
+              <img class="img-size img-fluid"  src="{{ url_for('static',filename='images/case-studies/08.jpg') }}"
+                alt="Electronics Manufacturing">
             </div>
             <div class="case-studies-info">
               <div class="case-studies-info-inner">
                 <h3 class="case-studies-title">Electronics Production</h3>
                 <div class="case-studies-content">
-                  <div class="case-studies-description">Smart factory implementation with predictive maintenance reducing downtime by 60% and increasing output quality.</div>
+                  <div class="case-studies-description">Smart factory implementation with predictive maintenance
+                    reducing downtime by 60% and increasing output quality.</div>
                 </div>
               </div>
             </div>
@@ -209,13 +350,15 @@
         <div class="col-lg-4 mb-4">
           <div class="case-studies-wrapper case-studies-style-1">
             <div class="case-studies-img">
-              <img class="img-fluid" rc="{{ url_for('static',filename='images/case-studies/09.jpg') }}" alt="Food Processing">
+              <img class="img-size img-fluid"  src="{{ url_for('static',filename='images/case-studies/09.jpg') }}"
+                alt="Food Processing">
             </div>
             <div class="case-studies-info">
               <div class="case-studies-info-inner">
                 <h3 class="case-studies-title">Food Processing Plant</h3>
                 <div class="case-studies-content">
-                  <div class="case-studies-description">Complete digitalization of food processing with traceability systems ensuring 100% compliance with safety standards.</div>
+                  <div class="case-studies-description">Complete digitalization of food processing with traceability
+                    systems ensuring 100% compliance with safety standards.</div>
                 </div>
               </div>
             </div>
@@ -232,16 +375,22 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="section-title">
-            <span class="sub-title"><img class="img-fluid logoonly" rc="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Why Choose Us</span>
+            <span class="sub-title"><img class="img-fluid logoonly"
+                rc="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Why Choose Us</span>
             <h2 class="title">Leading Manufacturing Technology Partner</h2>
           </div>
           <div class="list-wrapper">
             <ul class="list">
-              <li><img class="img-fluid" rc="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">20+ Years Manufacturing Experience</li>
-              <li><img class="img-fluid" rc="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">ISO 9001 & Industry 4.0 Certified</li>
-              <li><img class="img-fluid" rc="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">24/7 Production Support</li>
-              <li><img class="img-fluid" rc="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">Scalable Automation Solutions</li>
-              <li><img class="img-fluid" rc="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">ROI-Focused Implementations</li>
+              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">20+
+                Years Manufacturing Experience</li>
+              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">ISO 9001
+                & Industry 4.0 Certified</li>
+              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">24/7
+                Production Support</li>
+              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">Scalable
+                Automation Solutions</li>
+              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}"
+                  alt="">ROI-Focused Implementations</li>
             </ul>
           </div>
         </div>
@@ -249,25 +398,29 @@
           <div class="row">
             <div class="col-md-6 mb-4">
               <div class="counter counter-style-1">
-                <div class="counter-number"><span class="timer mb-0" data-to="150" data-speed="5000">150</span><span class="suffix">+</span></div>
+                <div class="counter-number"><span class="timer mb-0" data-to="150" data-speed="5000">150</span><span
+                    class="suffix">+</span></div>
                 <div class="counter-info"><span class="counter-title">Manufacturing Plants</span></div>
               </div>
             </div>
             <div class="col-md-6 mb-4">
               <div class="counter counter-style-1">
-                <div class="counter-number"><span class="timer mb-0" data-to="40" data-speed="5000">40</span><span class="suffix">%</span></div>
+                <div class="counter-number"><span class="timer mb-0" data-to="40" data-speed="5000">40</span><span
+                    class="suffix">%</span></div>
                 <div class="counter-info"><span class="counter-title">Average Efficiency Gain</span></div>
               </div>
             </div>
             <div class="col-md-6 mb-4">
               <div class="counter counter-style-1">
-                <div class="counter-number"><span class="timer mb-0" data-to="95" data-speed="5000">95</span><span class="suffix">%</span></div>
+                <div class="counter-number"><span class="timer mb-0" data-to="95" data-speed="5000">95</span><span
+                    class="suffix">%</span></div>
                 <div class="counter-info"><span class="counter-title">Client Retention Rate</span></div>
               </div>
             </div>
             <div class="col-md-6 mb-4">
               <div class="counter counter-style-1">
-                <div class="counter-number"><span class="timer mb-0" data-to="500" data-speed="5000">500</span><span class="suffix">M+</span></div>
+                <div class="counter-number"><span class="timer mb-0" data-to="500" data-speed="5000">500</span><span
+                    class="suffix">M+</span></div>
                 <div class="counter-info"><span class="counter-title">Products Manufactured</span></div>
               </div>
             </div>
@@ -284,19 +437,23 @@
       <div class="row justify-content-center text-center">
         <div class="col-lg-8">
           <div class="section-title">
-            <span class="sub-title justify-content-center"><img class="img-fluid logoonly" rc="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Get Started</span>
+            <span class="sub-title justify-content-center"><img class="img-fluid logoonly"
+                rc="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Get Started</span>
             <h2 class="title">Ready to Transform Your Manufacturing Operations?</h2>
-            <p class="mb-4">Let's discuss how our smart manufacturing solutions can optimize your production processes and drive Industry 4.0 transformation.</p>
+            <p class="mb-4">Let's discuss how our smart manufacturing solutions can optimize your production processes
+              and drive Industry 4.0 transformation.</p>
             <a class="btn btn-effect me-3" href="{{ url_for('contact_us') }}">
               <span>Request Demo</span>
               <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_59_257)">
-                  <path d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293" stroke="white" stroke-width="2" />
+                  <path
+                    d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293"
+                    stroke="white" stroke-width="2" />
                   <path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2" />
                 </g>
               </svg>
             </a>
-            <a class="btn btn-outline-light" href="{{ url_for('service') }}">View All Services</a>
+            <a class="btn next-color" href="{{ url_for('service') }}">View All Services</a>
           </div>
         </div>
       </div>

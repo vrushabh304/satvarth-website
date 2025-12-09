@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% include 'sidepanel.html' %}
+
+<div class="site-content vision-page">
+
+    <!-- HERO SECTION (MATCHES YOUR SCREENSHOT STYLE) -->
+    <section class="vision-hero-section inner-header"
+             style="background-image: url('{{ url_for('static', filename='images/banner/inner-header/page-header-01.jpg') }}');">
+        <div class="overlay"></div>
+
+
+        <div class="container text-center">
+            <h1 class="vision-title">Our Vision</h1>
+            <p class="vision-subtitle">
+                Empowering businesses with intelligent, future-ready digital solutions.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- MAIN SECTION (LEFT TEXT + RIGHT IMAGE) -->
+    <section class="vision-main">
+        <div class="container vision-row">
+
+            <!-- LEFT TEXT -->
+            <div class="vision-left">
+                <span class="vision-label">ABOUT US</span>
+                <h2>Your Experience Matters the Most</h2>
+
+                <p>
+                    You’re not just a client — you're part of our mission. Our vision is to build modern,
+                    scalable, and intuitive technology that elevates your business, strengthens your brand,
+                    and gives your customers a better experience.
+                </p>
+
+                <p>
+                    When things break, we fix them. When things work, we improve them. When you grow, we scale
+                    with you. Because your success defines our standards.
+                </p>
+
+                <a href="{{ url_for('contact_us') }}" class="vision-btn">Learn More →</a>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="vision-right">
+                <img src="{{ url_for('static', filename='images/our_vision.png') }}" alt="Vision" class="vision-img">
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}

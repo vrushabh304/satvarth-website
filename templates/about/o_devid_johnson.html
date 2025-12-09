@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% include 'sidepanel.html' %}
+
+<div class="site-content owner-page">
+
+    <!-- HERO SECTION -->
+    <section class="owner-hero-section"
+        style="background-image: url('{{ url_for('static', filename='images/banner/owner-hero.jpg') }}');">
+        <div class="overlay"></div>
+
+        <div class="container text-center">
+            <h1 class="owner-title">Devid Johnson</h1>
+            <p class="owner-subtitle">Chief Technology Officer </p>
+        </div>
+    </section>
+
+    <!-- MAIN OWNER SECTION -->
+    <section class="owner-main">
+        <div class="container owner-row">
+
+            <!-- LEFT CONTENT -->
+            <div class="owner-left">
+                <span class="owner-label">LEADERSHIP</span>
+
+                <h2>David Johnson</h2>
+                <h4 class="owner-role">SoftChief Technology Officer</h4>
+
+                <p>
+                    David Johnson drives the technological direction of Nexalus Soft with a clear mission:
+                    architecting systems that are stable, scalable, and built to handle real-world business challenges.
+                    His engineering leadership ensures every product meets the highest standards of reliability and
+                    performance.
+                </p>
+
+                <p>
+                    With extensive experience in cloud architecture, automation, API ecosystems, and product
+                    engineering,
+                    David transforms complex business needs into elegant, efficient, and future-ready technology
+                    solutions.
+                </p>
+
+                <p>
+                    His philosophy is simple: <strong>Build technology that lasts — and evolves with the
+                        business.</strong>
+                </p>
+
+                <a class="owner-btn" href="{{ url_for('contact_us') }}">CONNECT WITH TVARTH</a>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="owner-right">
+                <img src="{{ url_for('static', filename='images/team/06.jpg') }}" alt="Mellissa Doe" class="owner-img">
+            </div>
+
+        </div>
+    </section>
+
+</div>
+<style>
+    /* ==========================================
+   OWNER PAGE (Mellissa Doe) - Vision Theme
+========================================== */
+
+    .owner-page {
+        background: #000814;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* HERO */
+    .owner-hero-section {
+        position: relative;
+        padding: 150px 0 120px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .owner-hero-section .overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.85));
+    }
+
+    .owner-title {
+        font-size: 52px;
+        font-weight: 700;
+        position: relative;
+        z-index: 2;
+        color: #ffffff;
+    }
+
+    .owner-subtitle {
+        font-size: 18px;
+        color: #cdd8e8;
+        max-width: 650px;
+        margin: 10px auto 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* MAIN SECTION */
+    .owner-main {
+        padding: 90px 0;
+        background: #000e1d;
+    }
+
+    .owner-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .owner-label {
+        color: #4da8ff;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+
+    .owner-left h2 {
+        font-size: 42px;
+        font-weight: 700;
+        margin-top: 12px;
+    }
+
+    .owner-role {
+        font-size: 20px;
+        color: #4da8ff;
+        margin-bottom: 25px;
+    }
+
+    .owner-left p {
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 18px;
+        color: #d2d9e5;
+    }
+
+    /* BUTTON */
+    .owner-btn {
+        display: inline-block;
+        padding: 12px 28px;
+        border-radius: 50px;
+        color: #ffffff;
+        border: 1px solid #4da8ff;
+        text-decoration: none;
+        transition: 0.3s;
+        margin-top: 10px;
+    }
+
+    .owner-btn:hover {
+        background: #4da8ff;
+        color: #00101a;
+    }
+
+    /* IMAGE */
+    .owner-img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 0 25px rgba(0, 140, 255, 0.35);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 992px) {
+        .owner-row {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        .owner-img {
+            margin-top: 25px;
+        }
+
+        .owner-title {
+            font-size: 38px;
+        }
+
+        .owner-left h2 {
+            font-size: 32px;
+        }
+    }
+</style>
+{% include 'footer.html' %}
+{% endblock %}

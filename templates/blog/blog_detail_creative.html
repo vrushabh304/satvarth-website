@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% include 'sidepanel.html' %}
+
+<div class="site-content">
+  <div class="inner-header bg-holder"
+    style="background-image: url('{{ url_for('static', filename='images/blog/banner-blog.png') }}');">
+    <!-- this not error  -->
+    <div class="container">
+      <div class="row  justify-content-center">
+
+        <div class="col-md-12 text-center">
+          <br><br>
+          <h1 class="title">Creative Blog</h1>
+          <p>Innovative Business Marketing Designs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="content-wrapper">
+
+    <!-- BLOG CONTENT -->
+    <section class="space-ptb ellipse-bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+
+            <div class="blog-single format-standard">
+
+              <!-- BLOG HEADER -->
+              <div class="post-content-header">
+                <div class="post-meta">
+                  <ul>
+                    <li class="post-meta-category"><a href="#">Creative</a></li>
+                    <li class="post-meta-date">May 26, 2024</li>
+                  </ul>
+                </div>
+
+                <h3 class="post-title">Innovative Business Marketing Designs</h3>
+
+                <div class="blog-single-info">
+
+                  <!-- AUTHOR -->
+                  <div class="blog-author">
+                    <div class="blog-info">
+                      <h6 class="author-name">Written by</h6>
+                      <p> Paul Flavius</p>
+                    </div>
+                  </div>
+
+                  <!-- SOCIAL ICONS -->
+                  <div class="social-icon">
+                    <ul>
+                      <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- BLOG BODY -->
+              <div class="blog-post-content">
+                <div class="post-content-body">
+
+                  <p>
+                    Innovation in marketing design isn’t about creating something flashy —
+                    it’s about communicating more effectively. Smart businesses now use design
+                    not just for aesthetics but as a strategic tool that influences behavior,
+                    strengthens brand identity, and improves conversions.
+                  </p>
+
+                  <p>
+                    Customers today expect visually rich experiences, intuitive interfaces,
+                    and messaging that feels personal. Brands that embrace innovative design
+                    trends stand out faster and connect deeper with their audiences.
+                  </p>
+
+                  <h5 class="mt-4">1. Design That Tells a Story</h5>
+                  <p>
+                    Modern marketing is deeply emotional. Your visuals, colors, layout,
+                    and typography must work together to tell a clear, meaningful story.
+                    Businesses using narrative-driven design build stronger engagement
+                    and higher recall.
+                  </p>
+
+                  <h5 class="mt-4">2. Personalized Visual Experiences</h5>
+                  <p>
+                    Personalization is no longer optional. Customers prefer designs that
+                    adapt to their interests and behavior. Dynamic sections, tailored CTAs,
+                    and segmented landing pages dramatically increase performance.
+                  </p>
+
+                  <h5 class="mt-4">3. Interactive & Functional Layouts</h5>
+                  <p>
+                    Interactive elements — tabs, accordions, animated highlights,
+                    micro-interactions — make users explore content longer.
+                    Innovative marketing design merges functionality with creativity.
+                  </p>
+
+                  <div class="list-wrapper my-4">
+                    <ul class="list col-2 col-xs-1">
+                      <li>Focus on user-centered design</li>
+                      <li>Use flexible visual frameworks</li>
+                      <li>Make CTAs bold, simple, and direct</li>
+                      <li>Embrace clean, conversion-driven layouts</li>
+                    </ul>
+                  </div>
+
+                  <blockquote class="blockquote blockquote-style-1 my-5">
+                    <div class="blockquote-content">
+                      <p>
+                        "Great marketing design isn’t just beautiful — it’s purposeful.
+                        Every element should guide the user toward clarity, trust, and action."
+                      </p>
+                    </div>
+                  </blockquote>
+
+                  <h5 class="mt-4">4. Branding That Evolves with Trends</h5>
+                  <p class="mb-0">
+                    Brands that remain rigid fall behind quickly. Innovative businesses
+                    update their design language with emerging trends, audience insights,
+                    and digital behavior shifts — keeping the brand modern and competitive.
+                  </p>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}

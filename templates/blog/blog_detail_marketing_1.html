@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% include 'sidepanel.html' %}
+
+<div class="site-content">
+  <div class="inner-header bg-holder"
+    style="background-image: url('{{ url_for('static', filename='images/blog/banner-blog.png') }}');">
+    <!-- this not error  -->
+    <div class="container">
+      <div class="row  justify-content-center">
+
+        <div class="col-md-12 text-center">
+          <br><br>
+          <h1 class="title">Marketing Blog</h1>
+          <p>How to Integrate Marketing Tools into Your Design</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="content-wrapper">
+
+    <div class="content-wrapper">
+
+      <section class="space-ptb ellipse-bottom">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+              <div class="blog-single format-standard">
+                <br>
+                <!-- HEADER (no profile image) -->
+                <div class="post-content-header">
+                  <div class="post-meta">
+                    <ul>
+                      <li class="post-meta-category">Marketing</a></li>
+                      <li class="post-meta-date">December 12, 2023</li>
+                    </ul>
+                  </div>
+
+                  <h3 class="post-title">
+                    How to Integrate Marketing Tools into Your Design
+                  </h3>
+
+                  <div class="blog-single-info">
+                    <div class="blog-author">
+                      <div class="blog-info">
+                        <h6 class="author-name">Written by</h6>
+                        <p>James Smith</p>
+                      </div>
+                    </div>
+
+                    <div class="social-icon">
+                      <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- MAIN CONTENT (NO IMAGES) -->
+                <div class="blog-post-content">
+                  <div class="post-content-body">
+
+                    <p>
+                      Good design without data is just decoration. When you integrate marketing tools
+                      into your design workflow, every layout, color, and CTA is guided by real user
+                      behavior instead of assumptions.
+                    </p>
+
+                    <p>
+                      Before creating any UI, connect your process with analytics platforms,
+                      email tools, CRM systems, and A/B testing dashboards. These insights show what
+                      users click, ignore, or abandon—so you design smarter.
+                    </p>
+                    <br>
+                    <h5>1. Start with Analytics–Not Aesthetics</h5>
+                    <p>
+                      Use scroll depth, heatmaps, bounce rates, and session recordings to guide your
+                      design changes. If users don’t reach key content, restructure the layout.
+                    </p>
+                    <br>
+                    <h5>2. Sync Design with CRM + Email Tools</h5>
+                    <p>
+                      Match every design component with a real marketing action. Each banner,
+                      popup, or button should reflect funnel stages: awareness, consideration,
+                      decision.
+                    </p>
+
+                    <div class="list-wrapper my-4">
+                      <ul class="list col-2 col-xs-1">
+                        <li>Use UTM tracking for every CTA</li>
+                        <li>Align design elements with marketing goals</li>
+                        <li>Keep layout modular to test faster</li>
+                        <li>Update designs based on conversion data</li>
+                      </ul>
+                    </div>
+
+                    <blockquote class="blockquote blockquote-style-1 my-5">
+                      <div class="blockquote-content">
+                        <p>
+                          "The goal is not to make design look like marketing —
+                          but to make marketing feel like design: intentional, clean, and frictionless."
+                        </p>
+                      </div>
+                    </blockquote>
+                    <br>
+                    <h5>3. Build for Continuous Experimentation</h5>
+                    <p class="mb-0">
+                      Don’t create rigid layouts. Build flexible components that allow marketers to
+                      quickly A/B test headlines, buttons, or entire sections without breaking the flow.
+                    </p>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  {% include 'footer.html' %}
+  {% endblock %}

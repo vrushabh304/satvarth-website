@@ -4,18 +4,59 @@
 {% include 'sidepanel.html' %}
 <!--=================================
         Education Banner -->
+<style>
+  .next-color {
+    color: #ffffff;
+  }
+
+  .next-color:hover {
+    color: #798ae3;
+  }
+  /* Success Stories Padding */
+  .space-success-stories {
+    padding: 40px 0 0;
+  }
+  @media (max-width: 1400px) {
+    .space-success-stories {
+      padding: 120px 0 0;
+    }
+  }
+  @media (max-width: 1199px) {
+    .space-success-stories{
+      padding: 100px 0 0;
+    }
+  }
+  @media (max-width: 991px) {
+    .space-success-stories {
+      padding: 90px 0 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .space-success-stories {
+      padding: 70px 0 0;
+    }
+  }
+  @media (max-width: 575px) {
+    .space-success-stories {
+      padding: 50px 0 0px 0px;
+    }
+  }
+</style>
 <div class="main-banner main-banner-2">
   <div class="banner-inner">
-    <img class="img-fluid banner-bg" src="{{ url_for('static',filename='images/banner/banner-02/bg.jpg') }}" alt="Education Technology Solutions">
+    <img class="img-fluid banner-bg" src="{{ url_for('static',filename='images/banner/banner-02/bg.jpg') }}"
+      alt="Education Technology Solutions">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="banner-conent">
-            <span class="sub-title"><img class="img-fluid logoonly" src="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Education Technology</span>
+            <span class="sub-title"><img class="img-fluid logoonly"
+                src="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Education Technology</span>
             <h1 class="title mb-2 mb-md-4">Transforming Learning</h1>
             <div class="conent">
-              <p class="small-text">Empowering educational institutions with cutting-edge technology solutions that enhance learning experiences, streamline administration, and foster innovation in education.</p>
-              
+              <p class="small-text">Empowering educational institutions with cutting-edge technology solutions that
+                enhance learning experiences, streamline administration, and foster innovation in education.</p>
+
             </div>
             <div class="row justify-content-start align-items-center">
               <div class="col-lg-3 col-md-4 col-sm-4 order-sm-0 order-2">
@@ -23,7 +64,9 @@
                   <span>Get Started</span>
                   <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_59_253)">
-                      <path d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293" stroke="white" stroke-width="2" />
+                      <path
+                        d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293"
+                        stroke="white" stroke-width="2" />
                       <path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2" />
                     </g>
                   </svg>
@@ -31,7 +74,8 @@
               </div>
               <div class="col-lg-3 col-md-4 col-sm-5 order-sm-0 order-1">
                 <div class="counter counter-style-1 pt-0">
-                  <div class="counter-number"><span class="timer mb-0" data-to="500" data-speed="2000">500</span><span class="suffix">+</span></div>
+                  <div class="counter-number"><span class="timer mb-0" data-to="500" data-speed="2000">500</span><span
+                      class="suffix">+</span></div>
                   <div class="counter-info"><span class="counter-title">Educational Institutions Served</span></div>
                 </div>
               </div>
@@ -52,12 +96,14 @@
       <div class="row">
         <div class="col-xxl-7 col-lg-8">
           <div class="section-title mb-lg-0">
-            <span class="sub-title"><img class="img-fluid logoonly" src="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Education Solutions</span>
+            <span class="sub-title"><img class="img-fluid logoonly"
+                src="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Education Solutions</span>
             <h2 class="title mb-0">Revolutionizing Education with Technology</h2>
           </div>
         </div>
         <div class="col-xxl-5 col-lg-4 align-self-end">
-          <p class="mb-0 ps-xxl-5">From K-12 schools to universities, we provide comprehensive technology solutions that enhance teaching, learning, and administrative efficiency in educational environments.</p>
+          <p class="mb-0 ps-xxl-5">From K-12 schools to universities, we provide comprehensive technology solutions that
+            enhance teaching, learning, and administrative efficiency in educational environments.</p>
         </div>
       </div>
 
@@ -70,7 +116,8 @@
               </div>
               <div class="service-content">
                 <h5 class="service-title">Learning Management Systems</h5>
-                <p>Custom LMS platforms that facilitate online learning, course management, and student engagement with interactive features and analytics.</p>
+                <p>Custom LMS platforms that facilitate online learning, course management, and student engagement with
+                  interactive features and analytics.</p>
               </div>
             </div>
           </div>
@@ -83,7 +130,8 @@
               </div>
               <div class="service-content">
                 <h5 class="service-title">Student Information Systems</h5>
-                <p>Comprehensive platforms for managing student records, enrollment, grades, attendance, and communication between students, parents, and teachers.</p>
+                <p>Comprehensive platforms for managing student records, enrollment, grades, attendance, and
+                  communication between students, parents, and teachers.</p>
               </div>
             </div>
           </div>
@@ -96,7 +144,8 @@
               </div>
               <div class="service-content">
                 <h5 class="service-title">Educational Mobile Apps</h5>
-                <p>Interactive mobile applications for students and educators, featuring offline learning capabilities, progress tracking, and gamified learning experiences.</p>
+                <p>Interactive mobile applications for students and educators, featuring offline learning capabilities,
+                  progress tracking, and gamified learning experiences.</p>
               </div>
             </div>
           </div>
@@ -109,7 +158,8 @@
               </div>
               <div class="service-content">
                 <h5 class="service-title">Analytics & Reporting</h5>
-                <p>Advanced analytics tools that provide insights into student performance, learning patterns, and institutional effectiveness for data-driven decisions.</p>
+                <p>Advanced analytics tools that provide insights into student performance, learning patterns, and
+                  institutional effectiveness for data-driven decisions.</p>
               </div>
             </div>
           </div>
@@ -120,13 +170,14 @@
 
   <!--=================================
           Case Studies -->
-  <section class="space-pt bg-black">
+  <section class="space-success-stories bg-black">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10">
           <div class="section-title text-center">
             <span class="sub-title justify-content-center">
-                <img class="img-fluid logoonly" src="{{ url_for('static',  filename='images/logoonly.svg') }}" alt="">Success Stories</span>
+              <img class="img-fluid logoonly" src="{{ url_for('static',  filename='images/logoonly.svg') }}"
+                alt="">Success Stories</span>
             <h2 class="title">Education Projects We've Delivered</h2>
           </div>
         </div>
@@ -135,13 +186,15 @@
         <div class="col-lg-4 mb-4">
           <div class="case-studies-wrapper case-studies-style-1">
             <div class="case-studies-img">
-              <img class="img-fluid" src="{{ url_for('static',filename='images/case-studies/02.png') }}" alt="University Portal">
+              <img class="img-fluid" src="{{ url_for('static',filename='images/case-studies/02.png') }}"
+                alt="University Portal">
             </div>
             <div class="case-studies-info">
               <div class="case-studies-info-inner">
                 <h3 class="case-studies-title">University Student Portal</h3>
                 <div class="case-studies-content">
-                  <div class="case-studies-description">Comprehensive student management system serving 15,000+ students with course registration, grade tracking, and communication tools.</div>
+                  <div class="case-studies-description">Comprehensive student management system serving 15,000+ students
+                    with course registration, grade tracking, and communication tools.</div>
                 </div>
               </div>
             </div>
@@ -150,28 +203,32 @@
         <div class="col-lg-4 mb-4">
           <div class="case-studies-wrapper case-studies-style-1">
             <div class="case-studies-img">
-              <img class="img-fluid" src="{{ url_for('static',filename='images/case-studies/01.png') }}" alt="E-Learning Platform">
+              <img class="img-fluid" src="{{ url_for('static',filename='images/case-studies/01.png') }}"
+                alt="E-Learning Platform">
             </div>
             <div class="case-studies-info">
               <div class="case-studies-info-inner">
                 <h3 class="case-studies-title">Interactive E-Learning Platform</h3>
                 <div class="case-studies-content">
-                  <div class="case-studies-description">Gamified learning platform for K-12 education with adaptive learning algorithms and real-time progress tracking.</div>
+                  <div class="case-studies-description">Gamified learning platform for K-12 education with adaptive
+                    learning algorithms and real-time progress tracking.</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mb-4"> 
+        <div class="col-lg-4 mb-4">
           <div class="case-studies-wrapper case-studies-style-1">
             <div class="case-studies-img">
-              <img class="img-fluid" src="{{ url_for('static',filename='images/case-studies/05.png') }}" alt="School Management">
+              <img class="img-fluid" src="{{ url_for('static',filename='images/case-studies/05.png') }}"
+                alt="School Management">
             </div>
             <div class="case-studies-info">
               <div class="case-studies-info-inner">
                 <h3 class="case-studies-title">School Management System</h3>
                 <div class="case-studies-content">
-                  <div class="case-studies-description">Complete administrative solution for private schools including attendance, fee management, and parent communication portal.</div>
+                  <div class="case-studies-description">Complete administrative solution for private schools including
+                    attendance, fee management, and parent communication portal.</div>
                 </div>
               </div>
             </div>
@@ -188,16 +245,22 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="section-title">
-            <span class="sub-title"><img class="img-fluid logoonly" src="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Why Choose Us</span>
+            <span class="sub-title"><img class="img-fluid logoonly"
+                src="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Why Choose Us</span>
             <h2 class="title">Leading Education Technology Partner</h2>
           </div>
           <div class="list-wrapper">
             <ul class="list">
-              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">10+ Years in Education Technology</li>
-              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">FERPA & COPPA Compliant Solutions</li>
-              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">24/7 Technical Support</li>
-              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">Scalable Cloud Infrastructure</li>
-              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">Custom Integration Capabilities</li>
+              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">10+
+                Years in Education Technology</li>
+              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">FERPA &
+                COPPA Compliant Solutions</li>
+              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">24/7
+                Technical Support</li>
+              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">Scalable
+                Cloud Infrastructure</li>
+              <li><img class="img-fluid" src="{{ url_for('static',filename='images/arrow-right.png') }}" alt="">Custom
+                Integration Capabilities</li>
             </ul>
           </div>
         </div>
@@ -205,25 +268,29 @@
           <div class="row">
             <div class="col-md-6 mb-4">
               <div class="counter counter-style-1">
-                <div class="counter-number"><span class="timer mb-0" data-to="500" data-speed="5000">500</span><span class="suffix">+</span></div>
+                <div class="counter-number"><span class="timer mb-0" data-to="500" data-speed="5000">500</span><span
+                    class="suffix">+</span></div>
                 <div class="counter-info"><span class="counter-title">Educational Institutions</span></div>
               </div>
             </div>
             <div class="col-md-6 mb-4">
               <div class="counter counter-style-1">
-                <div class="counter-number"><span class="timer mb-0" data-to="1" data-speed="5000">1</span><span class="suffix">M+</span></div>
+                <div class="counter-number"><span class="timer mb-0" data-to="1" data-speed="5000">1</span><span
+                    class="suffix">M+</span></div>
                 <div class="counter-info"><span class="counter-title">Students Impacted</span></div>
               </div>
             </div>
             <div class="col-md-6 mb-4">
               <div class="counter counter-style-1">
-                <div class="counter-number"><span class="timer mb-0" data-to="98" data-speed="5000">98</span><span class="suffix">%</span></div>
+                <div class="counter-number"><span class="timer mb-0" data-to="98" data-speed="5000">98</span><span
+                    class="suffix">%</span></div>
                 <div class="counter-info"><span class="counter-title">Client Satisfaction</span></div>
               </div>
             </div>
             <div class="col-md-6 mb-4">
               <div class="counter counter-style-1">
-                <div class="counter-number"><span class="timer mb-0" data-to="50" data-speed="5000">50</span><span class="suffix">+</span></div>
+                <div class="counter-number"><span class="timer mb-0" data-to="50" data-speed="5000">50</span><span
+                    class="suffix">+</span></div>
                 <div class="counter-info"><span class="counter-title">Education Awards</span></div>
               </div>
             </div>
@@ -240,19 +307,23 @@
       <div class="row justify-content-center text-center">
         <div class="col-lg-8">
           <div class="section-title">
-            <span class="sub-title justify-content-center"><img class="img-fluid logoonly" src="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Get Started</span>
+            <span class="sub-title justify-content-center"><img class="img-fluid logoonly"
+                src="{{ url_for('static',filename='images/logoonly.svg') }}" alt=""> Get Started</span>
             <h2 class="title">Ready to Transform Your Educational Institution?</h2>
-            <p class="mb-4">Let's discuss how our education technology solutions can enhance learning outcomes and streamline your operations.</p>
+            <p class="mb-4">Let's discuss how our education technology solutions can enhance learning outcomes and
+              streamline your operations.</p>
             <a class="btn btn-effect me-3" href="{{ url_for('contact_us') }}">
               <span>Contact Us</span>
               <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_59_257)">
-                  <path d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293" stroke="white" stroke-width="2" />
+                  <path
+                    d="M19.4854 11.4293L17.0513 12.221C13.1214 13.4993 10.3036 16.9595 9.84784 21.0668C9.49371 16.981 6.71926 13.5081 2.81255 12.2604L0.210283 11.4293"
+                    stroke="white" stroke-width="2" />
                   <path d="M9.83594 20.8889L9.83594 0" stroke="white" stroke-width="2" />
                 </g>
               </svg>
             </a>
-            <a class="btn btn-outline-light"  href="{{ url_for('service') }}">View All Services</a>
+            <a class="btn next-color" href="{{ url_for('service') }}">View All Services</a>
           </div>
         </div>
       </div>

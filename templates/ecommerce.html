@@ -2,6 +2,148 @@
 {% block content %}
 
 {% include 'sidepanel.html' %}
+<style>
+    .next-color{
+    color: #ffffff;
+  }
+  .next-color:hover{
+    color: #798ae3;
+    
+  }
+/* 
+  #core feature box */
+  .core-features-box{
+    width: 100%;
+    height: 265px;
+  }
+  .platform-expertise-box{
+    width: 100%;
+    height: 265px;
+  }
+
+  .platform-expertise-box {
+  padding: 50px 0;
+}
+  @media (max-width: 1400px) {
+    .platform-expertise-box {
+    padding: 120px 0;
+  }
+
+ .core-features-box {
+    width: 100%;
+    height: 300px;
+  } 
+}
+
+
+@media (max-width: 1024px) {
+
+  .core-features-box {
+    width: 100%;
+    height: 370px;
+  }
+}
+
+/* <= 1199px */
+@media (max-width: 1199px) {
+    .platform-expertise-box {
+    padding: 100px 0;
+  }
+
+   .core-features-box {
+    width: 100%;
+    height: 390px;
+  }
+}
+
+/* <= 991px (tablets landscape) */
+@media (max-width: 991px) {
+    .platform-expertise-box {
+    padding: 0px 0;
+  }
+
+  .core-features-box {
+    width: 100%;
+    height: 290px;
+  }
+}
+
+/* <= 767px (tablets portrait / big phones) */
+@media (max-width: 767px) {
+    .platform-expertise-box {
+    padding: 70px 0;
+  }
+
+  .core-features-box {
+    width: 100%;      /* take full width of parent */
+    max-width: 100%;
+  }
+}
+
+/* <= 575px (small phones) */
+@media (max-width: 575px) {
+    .platform-expertise-box {
+    padding: 50px 0;
+  }
+  
+  .core-features-box {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+  }
+}
+/* image in last parts */
+  .img-size{
+    width: 100%;
+    height: 300px;
+
+  }
+  /* <= 1400px */
+@media (max-width: 1400px) {
+  .img-size {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .img-size {
+    width: 100%;
+  }
+}
+
+/* <= 1199px */
+@media (max-width: 1199px) {
+  .img-size {
+    width: 100%;
+  }
+}
+
+/* <= 991px (tablets landscape) */
+@media (max-width: 991px) {
+  .img-size {
+    width: 100%;
+  }
+}
+
+/* <= 767px (tablets portrait / big phones) */
+@media (max-width: 767px) {
+  .img-size{
+    width: 100%;      /* take full width of parent */
+    max-width: 100%;
+  }
+}
+
+/* <= 575px (small phones) */
+@media (max-width: 575px) {
+  .img-size{
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+  }
+}
+
+
+
+</style>
 <!--=================================
         E-commerce Banner -->
 <div class="main-banner main-banner-2">
@@ -132,28 +274,28 @@
       </div>
       <div class="row mt-5">
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center core-features-box p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-credit-card" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Secure Payments</h5>
             <p>Multiple payment gateways with PCI compliance and fraud protection.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center core-features-box p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-boxes" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Inventory Management</h5>
             <p>Real-time stock tracking, automated reordering, and multi-location inventory.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center core-features-box p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-shipping-fast" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Order Management</h5>
             <p>Complete order processing, shipping integration, and tracking capabilities.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center core-features-box p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-users" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Customer Management</h5>
             <p>CRM integration, customer profiles, and personalized shopping experiences.</p>
@@ -177,42 +319,42 @@
       </div>
       <div class="row mt-5">
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center platform-expertise-box p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fab fa-shopify" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Shopify Development</h5>
             <p>Custom Shopify themes, apps, and integrations for scalable online stores.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center platform-expertise-box p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fab fa-wordpress" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>WooCommerce</h5>
             <p>WordPress-based e-commerce solutions with custom plugins and themes.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center platform-expertise-box p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fab fa-magento" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Magento Commerce</h5>
             <p>Enterprise-level Magento solutions for complex e-commerce requirements.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center platform-expertise-box p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-code" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Custom Solutions</h5>
             <p>Bespoke e-commerce platforms built with modern frameworks and technologies.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center platform-expertise-box p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-cloud" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Headless Commerce</h5>
             <p>API-first headless commerce solutions for omnichannel experiences.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center platform-expertise-box p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-rocket" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Progressive Web Apps</h5>
             <p>Fast, app-like e-commerce experiences with offline capabilities.</p>
@@ -224,7 +366,7 @@
 
   <!--=================================
           E-commerce Case Studies -->
-  <section class="space-pt bg-black">
+  <section class="space-Success-Stories bg-black">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10">
@@ -238,7 +380,7 @@
         <div class="col-lg-4 mb-4">
           <div class="case-studies-wrapper case-studies-style-1">
             <div class="case-studies-img">
-              <img class="img-fluid" src="{{url_for('static',filename='images/case-studies/07.jpg') }}" alt="Fashion E-commerce">
+              <img class="img-fluid img-size" src="{{url_for('static',filename='images/case-studies/07.jpg') }}" alt="Fashion E-commerce">
             </div>
             <div class="case-studies-info">
               <div class="case-studies-info-inner">
@@ -253,7 +395,7 @@
         <div class="col-lg-4 mb-4">
           <div class="case-studies-wrapper case-studies-style-1">
             <div class="case-studies-img">
-              <img class="img-fluid" src="{{url_for('static',filename='images/case-studies/08.jpg') }}" alt="Electronics Store">
+              <img class="img-fluid img-size" src="{{url_for('static',filename='images/case-studies/08.jpg') }}" alt="Electronics Store">
             </div>
             <div class="case-studies-info">
               <div class="case-studies-info-inner">
@@ -268,7 +410,7 @@
         <div class="col-lg-4 mb-4">
           <div class="case-studies-wrapper case-studies-style-1">
             <div class="case-studies-img">
-              <img class="img-fluid" src="{{url_for('static',filename='images/case-studies/09.jpg') }}" alt="B2B Marketplace">
+              <img class="img-fluid img-size" src="{{url_for('static',filename='images/case-studies/09.jpg') }}" alt="B2B Marketplace">
             </div>
             <div class="case-studies-info">
               <div class="case-studies-info-inner">
@@ -355,7 +497,7 @@
                 </g>
               </svg>
             </a>
-            <a class="btn btn-outline-light" href="{{ url_for('service') }}">View All Services</a>
+            <a class="btn next-color" href="{{ url_for('service') }}">View All Services</a>
           </div>
         </div>
       </div>

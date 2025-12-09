@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% include 'sidepanel.html' %}
+
+<div class="site-content">
+  <div class="inner-header bg-holder"
+    style="background-image: url('{{ url_for('static', filename='images/blog/banner-blog.png') }}');">
+    <!-- this not error  -->
+    <div class="container">
+      <div class="row  justify-content-center">
+
+        <div class="col-md-12 text-center">
+          <br><br>
+          <h1 class="title">Operations Blog</h1>
+          <p>2024 Top SEO Features for Marketing Designs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="content-wrapper">
+
+    <section class="space-ptb ellipse-bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+
+            <div class="blog-single format-standard">
+
+              <!-- BLOG HEADER -->
+              <div class="post-content-header">
+                <div class="post-meta">
+                  <ul>
+                    <li class="post-meta-category">
+                      <a href="#">Operations</a>
+                    </li>
+                    <li class="post-meta-date">February 24, 2024</li>
+                  </ul>
+                </div>
+
+                <h3 class="post-title">
+                  2024 Top SEO Features for Marketing Designs
+                </h3>
+
+                <div class="blog-single-info">
+
+                  <!-- AUTHOR (NO IMAGE) -->
+                  <div class="blog-author">
+                    <div class="blog-info">
+                      <h6 class="author-name">Written by</h6>
+                      <p>James Smith</p>
+                    </div>
+                  </div>
+
+                  <div class="social-icon">
+                    <ul>
+                      <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BLOG CONTENT (NO IMAGES) -->
+              <div class="blog-post-content">
+                <div class="post-content-body">
+
+                  <p>
+                    In 2024, SEO is no longer just about keywords — it's tightly connected
+                    with design decisions. Marketing teams now expect UI/UX designers
+                    to understand how layout, structure, and content formats influence
+                    search performance.
+                  </p>
+
+                  <p>
+                    A visually appealing website means nothing if Google can't read,
+                    index, or understand it. And in 2024, search algorithms prioritize
+                    clarity, structure, and interaction patterns more than ever.
+                  </p>
+                  <br>
+                  <h5>1. Search-Optimized Layout Structures</h5>
+                  <p>
+                    Google's algorithms now evaluate how quickly users find information.
+                    Pages with clear spacing, readable sections, and consistent hierarchy
+                    perform better. Designers must use clean HTML structure, headings,
+                    and semantic sections.
+                  </p>
+                  <br>
+                  <h5>2. Core Web Vitals Integration</h5>
+                  <p>
+                    Speed and stability now directly impact rankings. Lightweight design,
+                    compressed components, and reduced scripts improve LCP, CLS, and FID.
+                    Designers must collaborate with developers from the start.
+                  </p>
+                  <br>
+                  <h5>3. SEO-Focused Component Design</h5>
+                  <p>
+                    Every component should be built with search discoverability in mind —
+                    accordions, tables, CTAs, and FAQ sections all require proper tags
+                    and structured content to rank.
+                  </p>
+
+                  <div class="list-wrapper my-4">
+                    <ul class="list col-2 col-xs-1">
+                      <li>Use proper heading hierarchy (H1 → H2 → H3)</li>
+                      <li>Design for fast loading (no heavy animations)</li>
+                      <li>Ensure text, not images, for important content</li>
+                      <li>Create modular sections for easy indexing</li>
+                    </ul>
+                  </div>
+
+                  <blockquote class="blockquote blockquote-style-1 my-5">
+                    <div class="blockquote-content">
+                      <p>
+                        "SEO and design are no longer separate tasks.
+                        In 2024, the winning teams are the ones who build for users AND search engines together."
+                      </p>
+                    </div>
+                  </blockquote>
+                  <br>
+                  <h5>4. Enhanced Mobile UX for Higher Rankings</h5>
+                  <p class="mb-0">
+                    Google crawls mobile-first. If your layout breaks, loads slowly,
+                    or hides key content on smaller screens, your ranking drops instantly.
+                    Designing for responsiveness is now directly tied to SEO success.
+                  </p>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}

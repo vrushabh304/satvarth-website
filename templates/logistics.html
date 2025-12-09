@@ -3,6 +3,172 @@
 
 
 {% include 'sidepanel.html' %}
+<style>
+    .next-color{
+    color: #ffffff;
+  }
+  .next-color:hover{
+    color: #798ae3;
+  }
+  .logistics-sectors {
+    padding: 40px 0 0;
+
+  }
+  
+  @media (max-width: 1400px) {
+    logistics-sectors-box {
+      padding: 120px 0 0;
+    }
+  }
+  @media (max-width: 1199px) {
+    .logistics-sectors{
+      padding: 100px 0 0;
+    }
+  }
+  @media (max-width: 991px) {
+    .logistics-sectors {
+      padding: 90px 0 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .logistics-sectors {
+      padding: 70px 0 0;
+    }
+  }
+  @media (max-width: 575px) {
+    .logistics-sectors {
+      padding: 50px 0 0px 0px;
+    }
+  }
+
+  /* Box css start */
+  .logistics-sectors-box{
+    width: 100%;
+    height: 300px;
+  }
+  .success-stories-logistics{
+    width: 100%;
+    height: 265px;
+  }
+
+  .success-stories-logistics {
+  padding: 50px 0;
+}
+  @media (max-width: 1400px) {
+    .success-stories-logistics {
+    padding: 120px 0;
+  }
+
+ .logistics-sectors-box {
+    width: 100%;
+    height: 300px;
+  } 
+}
+@media (max-width: 1024px) {
+
+  .logistics-sectors-box {
+    width: 100%;
+    height: 370px;
+  }
+}
+
+/* <= 1199px */
+@media (max-width: 1199px) {
+    .success-stories-logistics {
+    padding: 100px 0;
+  }
+
+   .logistics-sectors-box {
+    width: 100%;
+    height: 390px;
+  }
+}
+
+/* <= 991px (tablets landscape) */
+@media (max-width: 991px) {
+    .success-stories-logistics {
+    padding: 0px 0;
+  }
+
+  .logistics-sectors-box {
+    width: 100%;
+    height: 290px;
+  }
+}
+
+/* <= 767px (tablets portrait / big phones) */
+@media (max-width: 767px) {
+    .success-stories-logistics {
+    padding: 70px 0;
+  }
+
+  .logistics-sectors-box {
+    width: 100%;      /* take full width of parent */
+    max-width: 100%;
+  }
+}
+
+/* <= 575px (small phones) */
+@media (max-width: 575px) {
+    .success-stories-logistics {
+    padding: 50px 0;
+  }
+  
+  .logistics-sectors-box {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+  }
+}
+/* image in last parts */
+  .img-size{
+    width: 100%;
+    height: 300px;
+
+  }
+  /* <= 1400px */
+@media (max-width: 1400px) {
+  .img-size {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .img-size {
+    width: 100%;
+  }
+}
+
+/* <= 1199px */
+@media (max-width: 1199px) {
+  .img-size {
+    width: 100%;
+  }
+}
+
+/* <= 991px (tablets landscape) */
+@media (max-width: 991px) {
+  .img-size {
+    width: 100%;
+  }
+}
+
+/* <= 767px (tablets portrait / big phones) */
+@media (max-width: 767px) {
+  .img-size{
+    width: 100%;      /* take full width of parent */
+    max-width: 100%;
+  }
+}
+
+/* <= 575px (small phones) */
+@media (max-width: 575px) {
+  .img-size{
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+  }
+}
+</style>
 <!--=================================
         Logistics Banner -->
 <div class="main-banner main-banner-2">
@@ -121,7 +287,7 @@
 
   <!--=================================
           Logistics Services -->
-  <section class="space-pt bg-black">
+  <section class="logistics-sectors  bg-black">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10">
@@ -133,28 +299,28 @@
       </div>
       <div class="row mt-5">
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center logistics-sectors-box p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-shipping-fast" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>E-commerce Logistics</h5>
             <p>Fulfillment centers, order processing, and last-mile delivery solutions.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center logistics-sectors-box p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-plane" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Freight Forwarding</h5>
             <p>International shipping, customs clearance, and cargo management systems.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center logistics-sectors-box p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-industry" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Manufacturing</h5>
             <p>Supply chain management and production logistics optimization.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center logistics-sectors-box p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-store" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Retail Distribution</h5>
             <p>Retail supply chain and distribution center management solutions.</p>
@@ -178,42 +344,42 @@
       </div>
       <div class="row mt-5">
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center success-stories-logistics p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-brain" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>AI Route Optimization</h5>
             <p>Machine learning algorithms for optimal route planning and delivery scheduling.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center success-stories-logistics p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-satellite-dish" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>IoT Sensors</h5>
             <p>Real-time monitoring of temperature, humidity, and location for sensitive cargo.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center success-stories-logistics p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-chart-line" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Predictive Analytics</h5>
             <p>Demand forecasting and predictive maintenance for logistics operations.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center success-stories-logistics p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-qrcode" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Barcode & RFID</h5>
             <p>Automated tracking and inventory management with barcode and RFID technology.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center success-stories-logistics p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-mobile-alt" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Mobile Applications</h5>
             <p>Driver apps, customer tracking, and mobile workforce management solutions.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="text-center p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
+          <div class="text-center success-stories-logistics p-4" style="background: rgba(119, 190, 255, 0.1); border-radius: 10px;">
             <i class="fas fa-cloud" style="font-size: 48px; color: #77BEFF; margin-bottom: 20px;"></i>
             <h5>Cloud Integration</h5>
             <p>Scalable cloud-based logistics platforms with API integrations and real-time data.</p>
@@ -239,7 +405,7 @@
         <div class="col-lg-4 mb-4">
           <div class="case-studies-wrapper case-studies-style-1">
             <div class="case-studies-img">
-              <img class="img-fluid" src="{{ url_for('static',filename='images/case-studies/07.jpg') }}" alt="E-commerce Fulfillment">
+              <img class="img-fluid img-size" src="{{ url_for('static',filename='images/case-studies/07.jpg') }}" alt="E-commerce Fulfillment">
             </div>
             <div class="case-studies-info">
               <div class="case-studies-info-inner">
@@ -254,7 +420,7 @@
         <div class="col-lg-4 mb-4">
           <div class="case-studies-wrapper case-studies-style-1">
             <div class="case-studies-img">
-              <img class="img-fluid" src="{{ url_for('static',filename='images/case-studies/08.jpg') }}" alt="Fleet Management">
+              <img class="img-fluid img-size" src="{{ url_for('static',filename='images/case-studies/08.jpg') }}" alt="Fleet Management">
             </div>
             <div class="case-studies-info">
               <div class="case-studies-info-inner">
@@ -269,7 +435,7 @@
         <div class="col-lg-4 mb-4">
           <div class="case-studies-wrapper case-studies-style-1">
             <div class="case-studies-img">
-              <img class="img-fluid" src="{{ url_for('static',filename='images/case-studies/09.jpg') }}" alt="Supply Chain">
+              <img class="img-fluid img-size " src="{{ url_for('static',filename='images/case-studies/09.jpg') }}" alt="Supply Chain">
             </div>
             <div class="case-studies-info">
               <div class="case-studies-info-inner">
@@ -356,7 +522,7 @@
                 </g>
               </svg>
             </a>
-            <a class="btn btn-outline-light" href="{{ url_for('service') }}'">View All Services</a>
+            <a class="btn next-color" href="{{ url_for('service') }}'">View All Services</a>
           </div>
         </div>
       </div>
