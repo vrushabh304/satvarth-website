@@ -4,6 +4,7 @@
 {% include 'sidepanel.html' %}
 
 <div class="site-content service-page">
+    <br>
 
     <!-- HERO SECTION -->
     <section class="vision-hero-section inner-header"
@@ -67,6 +68,7 @@
 
 
 <style>
+<style>
 /* CMS & ERP PAGE — SAME DARK THEME AS OTHER SERVICE PAGES */
 
 .service-page {
@@ -76,13 +78,13 @@
 }
 
 /* HERO SECTION */
-.service-hero-section {
+.vision-hero-section {
     position: relative;
     padding: 150px 0 120px;
     background-size: cover;
     background-position: center;
 }
-.service-hero-section .overlay {
+.vision-hero-section .overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(
@@ -169,22 +171,109 @@
     box-shadow: 0 0 30px rgba(0,150,255,0.35);
 }
 
-/* RESPONSIVE */
+/* ============================= */
+/* RESPONSIVE BREAKPOINTS       */
+/* ============================= */
+
+/* Tablet Landscape & Portrait */
 @media (max-width: 992px) {
     .service-row {
         grid-template-columns: 1fr;
         text-align: center;
     }
+
     .service-img {
         margin-top: 28px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
+
     .service-title {
         font-size: 42px;
     }
+
     .service-left h2 {
         font-size: 34px;
     }
+
+    .service-subtitle {
+        font-size: 18px;
+    }
 }
+
+/* Tablets & Large Phones */
+@media (max-width: 768px) {
+    .vision-hero-section {
+        padding: 120px 0 90px;
+    }
+
+    .service-title {
+        font-size: 36px;
+    }
+
+    .service-left p {
+        font-size: 16px;
+    }
+
+    .service-list li {
+        font-size: 16px;
+    }
+
+    .service-btn {
+        font-size: 16px;
+        padding: 12px 28px;
+    }
+}
+
+/* Regular Mobile */
+@media (max-width: 576px) {
+    .vision-hero-section {
+        padding: 100px 0 70px;
+    }
+
+    .service-title {
+        font-size: 30px;
+    }
+
+    .service-subtitle {
+        font-size: 16px;
+    }
+
+    .service-left h2 {
+        font-size: 26px;
+    }
+
+    .service-left p {
+        font-size: 15px;
+    }
+
+    .service-img {
+        max-width: 100%;
+    }
+}
+
+/* Extra Small Mobile (iPhone SE, older phones) */
+@media (max-width: 400px) {
+    .service-title {
+        font-size: 26px;
+    }
+
+    .service-subtitle {
+        font-size: 14px;
+    }
+
+    .service-left h2 {
+        font-size: 22px;
+    }
+
+    .service-btn {
+        padding: 10px 24px;
+        font-size: 15px;
+    }
+}
+</style>
+
 </style>
 
 {% include 'footer.html' %}

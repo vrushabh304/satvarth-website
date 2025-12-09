@@ -4778,6 +4778,8 @@ div[cursor-type="arrow"] .owl-carousel,
   .history-wrapper .history-info .history-year-lg {
     writing-mode: inherit;
     transform: inherit;
+    color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
   }
 }
 
@@ -4788,6 +4790,8 @@ div[cursor-type="arrow"] .owl-carousel,
 
   .history-wrapper .history-info .history-year-lg {
     font-size: 80px;
+    color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
   }
 }
 

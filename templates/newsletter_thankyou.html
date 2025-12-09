@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% include 'sidepanel.html' %}
+
+<div class="site-content">
+
+  <!-- THANK YOU SECTION -->
+  <section class="thankyou-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <div class="thankyou-card">
+
+            <!-- Animated Icon -->
+            <div class="thankyou-icon-wrapper">
+              <div class="thankyou-circle">
+                <i class="fa-solid fa-paper-plane"></i>
+              </div>
+            </div>
+
+            <!-- Text -->
+            <h1 class="thankyou-title">Thank you for subscribing!</h1>
+            <p class="thankyou-subtitle">
+              We’ve received your email successfully.
+              You’ll hear from us soon with updates, insights, and product news.
+            </p>
+
+            <!-- Extra info -->
+            <div class="thankyou-extra">
+              <p class="mb-2">What’s next?</p>
+              <ul>
+                <li>Check your inbox for a confirmation mail.</li>
+                <li>Whitelist our email so you don’t miss any updates.</li>
+                <li>Explore our latest blogs and case studies meanwhile.</li>
+              </ul>
+            </div>
+
+            <!-- Buttons -->
+            <div class="thankyou-actions">
+              <a href="{{ url_for('index') }}" class="btn btn-effect">
+                <span>Back to Home</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<style>
+/* ===============================
+   SECTION LAYOUT (NAVBAR + GAP)
+   =============================== */
+
+/* Desktop & large screens */
+.thankyou-section {
+  /* enough space under fixed navbar + nice gap */
+  padding: 140px 0 100px;
+  background: radial-gradient(circle at top, #111827 0, #020617 45%, #000000 100%);
+}
+
+/* Tablets / small laptops */
+@media (max-width: 991.98px) {
+  .thankyou-section {
+    padding: 120px 0 80px;
+  }
+}
+
+/* Normal + mini mobiles */
+@media (max-width: 575.98px) {
+  .thankyou-section {
+    padding: 110px 0 60px;
+  }
+}
+
+/* ===============================
+   CARD & CONTENT STYLES
+   =============================== */
+
+.thankyou-card {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 20px;
+  padding: 40px 28px;
+  text-align: center;
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+/* floating glow elements */
+.thankyou-card::before,
+.thankyou-card::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.25), transparent 60%);
+  filter: blur(2px);
+  animation: float-glow 12s infinite linear;
+}
+.thankyou-card::before {
+  top: -60px;
+  left: -40px;
+}
+.thankyou-card::after {
+  bottom: -80px;
+  right: -60px;
+  animation-duration: 16s;
+}
+
+@keyframes float-glow {
+  0%   { transform: translate3d(0, 0, 0); opacity: 0.85; }
+  50%  { transform: translate3d(20px, -10px, 0); opacity: 0.4; }
+  100% { transform: translate3d(0, 0, 0); opacity: 0.85; }
+}
+
+/* animated icon */
+.thankyou-icon-wrapper {
+  margin-bottom: 18px;
+}
+.thankyou-circle {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid rgba(96, 165, 250, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #38bdf8;
+  background: radial-gradient(circle at 30% 20%, #0f172a, #020617);
+  position: relative;
+  animation: pop-in 0.6s ease-out, pulse 1.8s ease-out infinite 0.8s;
+}
+
+@keyframes pop-in {
+  0%   { transform: scale(0.4); opacity: 0; }
+  60%  { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.6); }
+  70%  { box-shadow: 0 0 0 20px rgba(59, 130, 246, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+
+/* text */
+.thankyou-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.thankyou-subtitle {
+  font-size: 17px;
+  color: #cbd5f5;
+  max-width: 520px;
+  margin: 0 auto 20px;
+}
+
+/* extra info */
+.thankyou-extra {
+  background: rgba(15, 23, 42, 0.85);
+  border-radius: 14px;
+  padding: 18px 20px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  text-align: left;
+  margin: 0 auto 24px;
+  max-width: 540px;
+  font-size: 15px;
+}
+.thankyou-extra p {
+  color: #e5e7eb;
+  font-weight: 500;
+}
+.thankyou-extra ul {
+  padding-left: 18px;
+  margin: 0;
+}
+.thankyou-extra li {
+  color: #9ca3af;
+  margin-bottom: 6px;
+}
+
+/* buttons */
+.thankyou-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.alt-btn {
+  border-radius: 999px;
+  padding: 11px 26px;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  font-size: 15px;
+}
+.alt-btn:hover {
+  background: #e5e7eb;
+  color: #020617;
+}
+
+/* RESPONSIVE FOR CARD/TEXT ONLY */
+@media (max-width: 768px) {
+  .thankyou-card {
+    padding: 28px 20px;
+  }
+  .thankyou-title {
+    font-size: 24px;
+  }
+  .thankyou-subtitle {
+    font-size: 15px;
+  }
+  .thankyou-extra {
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .thankyou-extra {
+    font-size: 14px;
+  }
+}
+</style>
+
+{% include 'footer.html' %}
+{% endblock %}

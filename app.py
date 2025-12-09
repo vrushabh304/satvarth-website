@@ -1,14 +1,19 @@
-from flask import Flask, render_template, request, jsonify, url_for
+from flask import Flask, render_template, request, jsonify, url_for , redirect , session
 from flask_mail import Mail
 from config import Config          # Import settings
 from email_utils import send_contact_email 
 from datetime import datetime
+from newsletter_utils import send_newsletter_email
+
 # Import the email logic
 app = Flask(__name__)
 
 
+
 # Load configuration from config.py
 app.config.from_object(Config)
+
+
 
 # Initialize Mail
 mail = Mail(app)
@@ -268,7 +273,7 @@ def our_mission():
 
 @app.route('/custom_web_app ')
 def custom_web_app():
-    return render_template('service/api_development_integration.html')
+    return render_template('service/custom_web_app.html')
 
 @app.route('/mobile_app_development')
 def mobile_app_development():
@@ -306,7 +311,9 @@ def maintenance_support():
 def form():
     return render_template('form.html')
 
-# Coming-Soon 
+# Coming-Soon page start and timer on ------------------------------------------------------------------------------------------------------
+
+
 @app.route("/coming_soon")
 def coming_soon():
     # 1) If you want countdown: set a real launch date
@@ -315,8 +322,33 @@ def coming_soon():
 
     # 2) If you DON'T want countdown, only message:
     # launch_date = None
-
     return render_template("coming_soon.html", launch_date=launch_date)
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------
+#footer email working
+
+@app.route("/newsletter", methods=["POST"])
+def newsletter():
+    user_email = request.form.get("email")
+
+    if not user_email:
+        return "Invalid email", 400
+
+    # Send emails (admin + user)
+    send_newsletter_email(
+        mail=mail,
+        admin_email=Config.RECIPIENT_EMAIL,
+        user_email=user_email
+    )
+
+    # Redirect to thank-you page
+    return redirect(url_for("newsletter_thankyou"))
+
+@app.route("/newsletter-thankyou")
+def newsletter_thankyou():
+    return render_template("newsletter_thankyou.html")
+
 
 # @app.route('/ ')
 # def ():
